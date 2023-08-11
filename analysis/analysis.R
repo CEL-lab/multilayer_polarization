@@ -1,4 +1,5 @@
 # Load necessary packages
+# hi there
 library(DBI)
 library(RSQLite)
 library(igraph)
