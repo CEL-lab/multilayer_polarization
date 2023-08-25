@@ -184,3 +184,221 @@ SET
   state = (SELECT githubListSenator.state FROM githubListSenator WHERE finalTable.twitter_id = githubListSenator.twitter_id),
   region = (SELECT githubListSenator.region FROM githubListSenator WHERE finalTable.twitter_id = githubListSenator.twitter_id),
   party = (SELECT githubListSenator.party FROM githubListSenator WHERE finalTable.twitter_id = githubListSenator.twitter_id);
+
+---
+select distinct OFFICE1, OFFICE1_LEVEL from allPPAList;
+select distinct BIOID from allPPAList where OFFICE1_LEVEL = 1;
+
+---- senatörliste id ekliyorum OFFICE2
+UPDATE senatorlist SET OFFICE2 = ROWID;
+select count(OFFICE2) from senatorlist;
+
+---------------- yeni listedeki tüm twitler listesi
+
+CREATE TABLE allPPATweetsFiltered AS
+select *
+from allPPATweets a
+    inner join senatorlist g on
+    (a.author_id = g.BIOID)
+    or (a.author_id = g.OTWIT_ID)
+    or (a.author_id = g.OTWIT_ID_2)
+    or (a.author_id = g.OTWIT_ID_3)
+    or (a.author_id = g.OTWIT_ID_4)
+    or (a.author_id = g.OTWIT_ID_5)
+    or (a.author_id = g.OTWIT_ID_6)
+    or (a.author_id = g.GOVTWIT_ID)
+    or (a.author_id = g.PTWIT_ID)
+    or (a.author_id = g.twitter_id);
+
+CREATE TABLE githubTweetsFiltered AS
+select *
+from githubTweets a
+    inner join senatorlist g on
+    (a.author_id = g.BIOID)
+    or (a.author_id = g.OTWIT_ID)
+    or (a.author_id = g.OTWIT_ID_2)
+    or (a.author_id = g.OTWIT_ID_3)
+    or (a.author_id = g.OTWIT_ID_4)
+    or (a.author_id = g.OTWIT_ID_5)
+    or (a.author_id = g.OTWIT_ID_6)
+    or (a.author_id = g.GOVTWIT_ID)
+    or (a.author_id = g.PTWIT_ID)
+    or (a.author_id = g.twitter_id);
+
+----
+CREATE TABLE tumTweets AS
+SELECT * FROM allPPATweetsFiltered
+UNION ALL
+SELECT * FROM githubTweetsFiltered;
+
+----
+
+SELECT count(*) FROM tumTweets WHERE tumTweets.OFFICE2 IS NULL;
+
+---- kaç kişinin twiti yok ve bunlar kimler
+select count(distinct OFFICE2) from tumTweets;
+
+SELECT p.*
+FROM senatorlist p
+LEFT JOIN tumTweets t ON p.OFFICE2 = t.OFFICE2
+WHERE t.id IS NULL;
+
+---
+--- unique hashtagleri say
+SELECT hashtag,
+  COUNT(*) AS frequency,
+  COUNT(DISTINCT OFFICE2) AS unique_users
+FROM (
+    SELECT json_extract(value, '$.tag') AS hashtag,
+           OFFICE2
+    FROM main.tumTweets2,
+      json_each(entities, '$.hashtags')
+    WHERE json_valid(entities) = 1
+  )
+GROUP BY hashtag
+-- HAVING unique_users > 1
+ORDER BY frequency DESC;
+
+--- örnek twitlerle beraber hashtag tablosunu veriyor.
+WITH HashtagMetrics AS (
+    SELECT
+        json_extract(value, '$.tag') AS hashtag,
+        COUNT(*) AS frequency,
+        COUNT(DISTINCT OFFICE2) AS unique_users
+    FROM main.tumTweets2,
+        json_each(entities, '$.hashtags')
+    WHERE json_valid(entities) = 1
+    GROUP BY hashtag
+    HAVING unique_users > 1
+),
+HashtagLikes AS (
+    -- Get hashtags, their corresponding likes, and tweet text
+    SELECT
+        json_extract(value, '$.tag') AS hashtag,
+        json_extract(public_metrics, '$.like_count') AS like_count,
+        text AS tweet_text
+    FROM main.tumTweets2,
+        json_each(entities, '$.hashtags')
+    WHERE json_valid(entities) = 1
+),
+RankedTweets AS (
+    -- Rank tweets for each hashtag based on their like counts
+    SELECT
+        h.hashtag,
+        h.like_count,
+        h.tweet_text,
+        ROW_NUMBER() OVER(PARTITION BY h.hashtag ORDER BY h.like_count DESC) as rnk
+    FROM HashtagLikes h
+)
+-- Combine metrics with top 3 tweets
+SELECT
+    hm.hashtag,
+    hm.frequency,
+    hm.unique_users,
+    rt.like_count,
+    rt.tweet_text
+FROM HashtagMetrics hm
+JOIN RankedTweets rt ON hm.hashtag = rt.hashtag
+WHERE rt.rnk <= 3
+ORDER BY hm.frequency DESC, rt.like_count DESC;
+
+
+--- chech duplicates and create new tumTweets table
+SELECT *
+FROM tumTweets2
+WHERE id IN (
+    SELECT id
+    FROM tumTweets2
+    GROUP BY id
+    HAVING COUNT(id) > 1
+)
+ORDER BY id;
+
+CREATE TABLE tumTweets2 AS
+SELECT *
+FROM tumTweets
+WHERE rowid IN (
+    SELECT MIN(rowid)
+    FROM tumTweets
+    GROUP BY id
+);
+
+
+---- mention2 columnunun clusterlar ile oluşturulması
+
+CREATE TABLE tumTweets3 AS SELECT * FROM tumTweets2;
+
+
+ALTER TABLE tumTweets3 ADD COLUMN entities2 TEXT;
+
+UPDATE tumTweets3 SET entities2 = entities;
+
+
+UPDATE tumTweets3
+SET entities2 = REPLACE(entities2,
+                          '"tag": "' || (SELECT hashtag FROM all_hashtags) || '"',
+                          '"tag": "' || (SELECT cluster FROM all_hashtags) || '"')
+WHERE entities2 LIKE '%"tag": "%' || (SELECT hashtag FROM all_hashtags) || '%"';
+
+--- unique hashtagleri say
+SELECT hashtag,
+  COUNT(*) AS frequency,
+  COUNT(DISTINCT OFFICE2) AS unique_users
+FROM (
+    SELECT json_extract(value, '$.tag') AS hashtag,
+           OFFICE2
+    FROM main.tumTweets3,
+      json_each(entities2, '$.hashtags')
+    WHERE json_valid(entities2) = 1
+  )
+GROUP BY hashtag
+HAVING unique_users > 1
+ORDER BY frequency DESC;
+
+--- create id-hashtag table
+CREATE TABLE tweet_hashtags (
+    author_id TEXT,
+    hashtag TEXT
+);
+
+ALTER TABLE tweet_hashtags ADD COLUMN cluster;
+
+UPDATE tweet_hashtags
+SET cluster = (
+    SELECT all_hashtags.cluster
+    FROM all_hashtags
+    WHERE all_hashtags.hashtag = tweet_hashtags.hashtag
+);
+
+--- hashtag summary oluşturuldu
+CREATE TABLE hashtag_summary (
+    cluster TEXT,
+    frequency INTEGER,
+    unique_users INTEGER
+);
+
+INSERT INTO hashtag_summary (cluster, frequency, unique_users)
+SELECT
+    cluster,
+    COUNT(*) AS frequency,
+    COUNT(DISTINCT author_id) AS unique_users
+FROM tweet_hashtags
+GROUP BY cluster
+HAVING unique_users > 1;
+
+--- create id-hashtag table 2
+CREATE TABLE tweet_hashtags2 (
+    OFFICE2 TEXT,
+    hashtag TEXT
+);
+
+--- here some code is in python
+
+ALTER TABLE tweet_hashtags2 ADD COLUMN cluster;
+
+UPDATE tweet_hashtags2
+SET cluster = (
+    SELECT all_hashtags.cluster
+    FROM all_hashtags
+    WHERE all_hashtags.hashtag = tweet_hashtags2.hashtag
+);
