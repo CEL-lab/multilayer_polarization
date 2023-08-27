@@ -402,3 +402,15 @@ SET cluster = (
     FROM all_hashtags
     WHERE all_hashtags.hashtag = tweet_hashtags2.hashtag
 );
+
+
+--- party sadeleştirme
+select OFFICE2, "PARTY NAME, ENGLISH", party, finalParty from senatorlist;
+
+ALTER TABLE senatorlist ADD finalParty TEXT;
+
+UPDATE senatorlist SET finalParty = COALESCE(party, "PARTY NAME, ENGLISH");
+
+
+
+
