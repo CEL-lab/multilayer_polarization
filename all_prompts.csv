@@ -1,0 +1,432 @@
+"","cluster","unsup_01_category","unsup_03_category","unsup_04_category","unsup_05_category","unsup_01_category_375","unsup_02_category_375","unsup_03_category_375","unsup_04_category_375","unsup_05_category_375","total"
+"1","1u",NA,NA,NA,"Labor Rights",NA,NA,NA,NA,"Labor/Union",2
+"2","4Hweek",NA,NA,"Other/General","Youth Organization/Advocacy","Miscellaneous",NA,NA,"Elections & Voting","Youth Organization/Education",5
+"3","99countymeetings",NA,NA,NA,"Civic Engagement",NA,NA,NA,NA,NA,1
+"4","AdvanceIndianHealth",NA,NA,NA,"Health Advocacy",NA,NA,NA,"States & Local Focus","Healthcare/Minority Rights",3
+"5","AEW2022",NA,NA,"Entertainment, Sports, and Media","Education Advocacy",NA,NA,NA,"National & Cultural Recognition","Likely Event or Organization",4
+"6","AFN",NA,NA,"Other/General","Event/Organization",NA,NA,NA,NA,NA,2
+"7","agricultural",NA,NA,NA,"Agriculture",NA,NA,NA,NA,NA,1
+"8","AlaskaDay","States & Locations","National Holidays & Commemorations","States and Regions","State Celebration/History",NA,NA,"State and Local Politics","States & Local Focus","State Celebration",7
+"9","AmericaFirst","Campaign & Political Movements",NA,NA,"Patriotic Expression/Policy","Political Campaign & Party Affiliations",NA,"Party and Political Alignment","Political Position & Parties","Political Slogan/Nationalism",6
+"10","AmericanDiabetesMonth",NA,NA,NA,"Health Advocacy","National Observances & Holidays","Health Awareness","Societal and Cultural Issues",NA,"Healthcare Awareness",5
+"11","AmericanEducationWeek",NA,"Political Agendas, Bills, & Policies","Holidays and Observances","Education Appreciation","National Observances & Holidays",NA,"Policies and Legislation","Policies & Governance","Education",7
+"12","AmericanRescuePlan","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Holidays and Observances","Legislation","Economic & Infrastructure Issues",NA,"Policies and Legislation","Policies & Governance","Government Policy/Legislation",8
+"13","antisemitism",NA,NA,NA,"Social Justice/Advocacy","Miscellaneous",NA,"Societal and Cultural Issues","Rights & Social Issues","Social Issue/Human Rights",5
+"14","Arizona","States & Locations",NA,"States and Regions","Geographical",NA,NA,"State and Local Politics",NA,NA,4
+"15","Arkansas","States & Locations",NA,NA,"Geographical",NA,"Geographical","State and Local Politics","States & Local Focus","State Politics",6
+"16","ArmyNavy","Military & Veterans",NA,NA,"Military Appreciation",NA,NA,NA,"Law & Order and Border Issues","Military/Event",4
+"17","arpx",NA,NA,NA,"Political Expression",NA,NA,NA,"States & Local Focus","Likely State Politics (Arkansas)",3
+"18","ARSen",NA,NA,NA,"Political Election","States and Local Politics","Election/Campaign",NA,NA,"Senate Race/State Politics",4
+"19","Artemis","Miscellaneous","Miscellaneous & General","Other/General","Space Program","Miscellaneous","Space Exploration","Environment and Climate",NA,"Space Exploration",8
+"20","Artemis","Environment & Space","Miscellaneous & General","Other/General","Space Program","Miscellaneous","Space Exploration","Environment and Climate",NA,"Space Exploration",8
+"21","AxeFiles",NA,NA,NA,"Media/Entertainment",NA,NA,NA,NA,NA,1
+"22","AZ",NA,NA,"Other/General","Geographical",NA,NA,NA,NA,NA,2
+"23","AZSEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"24","BackTheBlue","Advocacy & Rights","Miscellaneous & General","Political Issues and Advocacy","Law Enforcement Support",NA,"Social Movements","Party and Political Alignment","Political Position & Parties","Law Enforcement Support",8
+"25","BackTheBlue","Advocacy & Rights","Miscellaneous & General","Political Issues and Advocacy","Law Enforcement Support",NA,"Social Movements","Party and Political Alignment","Law & Order and Border Issues","Law Enforcement Support",8
+"26","BackTheBlue","Advocacy & Rights","Miscellaneous & General","Support, Appreciation, and Solidarity","Law Enforcement Support",NA,"Social Movements","Party and Political Alignment","Political Position & Parties","Law Enforcement Support",8
+"27","BackTheBlue","Advocacy & Rights","Miscellaneous & General","Support, Appreciation, and Solidarity","Law Enforcement Support",NA,"Social Movements","Party and Political Alignment","Law & Order and Border Issues","Law Enforcement Support",8
+"28","BAONPDX",NA,NA,NA,"Sports/Team Reference",NA,NA,NA,NA,"Likely Local Organization/Event",2
+"29","BEATNavy",NA,NA,NA,"Military/Sports Rivalry",NA,NA,NA,NA,NA,1
+"30","BidenBorderCrisis","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Political Criticism",NA,"Political Issues","National Security and Immigration","Political Position & Parties","Immigration/Political Criticism",8
+"31","BidenFlation","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Political Criticism",NA,NA,NA,NA,NA,4
+"32","Bidenomics","Campaign & Political Movements","Economic & Financial","Criticisms and Controversies","Economic Policy","Economic & Infrastructure Issues",NA,"Policies and Legislation","Political Position & Parties","Economic Policy/Political Criticism",8
+"33","BidenRecession","Campaign & Political Movements","Economic & Financial","Criticisms and Controversies","Economic Policy/Critique",NA,NA,"Economic Issues","Political Position & Parties","Economic Policy/Political Criticism",7
+"34","bipartisan",NA,NA,NA,"Political Collaboration",NA,"Political Stance",NA,"Political Position & Parties","Political Cooperation",4
+"35","BipartisanInfrastructureLaw","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Legislation","Economic & Infrastructure Issues","Legislation","Policies and Legislation","Policies & Governance","Government Policy/Legislation",9
+"36","Bitcoin",NA,"Economic & Financial",NA,"Financial/Technology",NA,NA,NA,NA,NA,2
+"37","BlakeMasters",NA,NA,NA,"Individual",NA,NA,NA,NA,NA,1
+"38","BlueRoof",NA,NA,"Criticisms and Controversies","Initiative/Program",NA,NA,"Policies and Legislation","Political Position & Parties","Likely Specific Policy/Program",5
+"39","BlueWave",NA,NA,NA,"Political Movement","Political Campaign & Party Affiliations","Political Movement","Party and Political Alignment","Political Position & Parties","Political Movement",6
+"40","BorderCrisis",NA,NA,"Criticisms and Controversies","Immigration Policy",NA,"Political Issues","National Security and Immigration","Law & Order and Border Issues","Immigration/Political Issue",6
+"41","BREAKING",NA,NA,"Other/General","News Reporting","Miscellaneous",NA,"Miscellaneous and General",NA,"News/Media",5
+"42","BreastCancerAwarenessMonth","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Health Awareness","National Observances & Holidays","Health Awareness","Societal and Cultural Issues","National & Cultural Recognition","Healthcare Awareness",9
+"43","buylocal",NA,NA,NA,"Economic/Local Business Advocacy","Political Campaign & Party Affiliations",NA,"Economic Issues","Economy & Finance","Economic Policy/Support Local Business",5
+"44","CA",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"45","CancelStudentDebt","Policies, Laws & Issues",NA,"Political Issues and Advocacy","Economic/Student Advocacy","Economic & Infrastructure Issues",NA,"Justice and Civil Rights","Rights & Social Issues","Education/Financial Policy",7
+"46","CCP",NA,NA,"Criticisms and Controversies","Foreign Policy","International Affairs","International Politics",NA,"International & Foreign Affairs","Foreign Policy/China",6
+"47","Champion4Children",NA,NA,NA,"Advocacy",NA,NA,NA,"Rights & Social Issues","Children's Rights/Welfare",3
+"48","ChangeNeeded",NA,NA,NA,"General Advocacy/Reform",NA,NA,NA,NA,NA,1
+"49","ChildTaxCredit","Policies, Laws & Issues",NA,"Holidays and Observances","Economic Policy","National Observances & Holidays","Economic Policy","Policies and Legislation","National & Cultural Recognition","Government Policy/Financial Support",8
+"50","ChildTaxCredit","Policies, Laws & Issues",NA,"Holidays and Observances","Economic Policy","Economic & Infrastructure Issues","Economic Policy","Policies and Legislation","National & Cultural Recognition","Government Policy/Financial Support",8
+"51","China","International Issues","Miscellaneous & General","Other/General","Foreign Relations",NA,NA,"International Affairs and Global Issues","International & Foreign Affairs","Foreign Policy/China",7
+"52","ChinaProtests","International Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Foreign Affairs/Protest","International Affairs",NA,"International Affairs and Global Issues","International & Foreign Affairs","Foreign Policy/China",8
+"53","ChooseWisely",NA,NA,NA,"General Expression/Advice",NA,NA,NA,NA,NA,1
+"54","Christmas","Celebrations & Holidays","National Holidays & Commemorations","Holidays and Observances","Cultural/Religious Celebration","National Observances & Holidays",NA,"Societal and Cultural Issues",NA,"Cultural/Religious Celebration",7
+"55","CleanWater50","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Environmental Advocacy",NA,"Environmental Issues","Policies and Legislation","Policies & Governance","Environmental Policy",8
+"56","CleanWaterAct","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Other/General","Environmental Legislation",NA,NA,"Policies and Legislation","Policies & Governance","Environmental Policy",7
+"57","ClimateChange","Policies, Laws & Issues",NA,NA,"Environmental Advocacy",NA,"Environmental Issues","Environment and Climate","Environment & Climate","Environmental Policy",6
+"58","ClubQ",NA,NA,NA,"Media/Entertainment",NA,NA,NA,NA,"Likely Specific Organization/Group",2
+"59","CodifyRoe",NA,NA,"Political Issues and Advocacy","Policy/Advocacy","Social Issues",NA,"Justice and Civil Rights","Policies & Governance","Women's Rights/Legal Policy",6
+"60","CollierCounty",NA,NA,NA,"Geographical",NA,NA,NA,"States & Local Focus","Likely Local Politics/Geographic Area",3
+"61","ComingOutDay",NA,NA,NA,"LGBTQ+ Rights/Celebration","Social Issues",NA,NA,"National & Cultural Recognition","LGBTQ+ Rights/Celebration",4
+"62","ContractWithWomen",NA,NA,NA,"Advocacy",NA,NA,NA,NA,NA,1
+"63","COP 27",NA,NA,NA,NA,NA,NA,NA,NA,NA,0
+"64","copolitics",NA,NA,NA,"Political Expression",NA,NA,NA,NA,"State Politics (Colorado)",2
+"65","CORNWATCH",NA,"Political Agendas, Bills, & Policies","Other/General","Agricultural or Political Advocacy",NA,NA,NA,NA,NA,3
+"66","COSen",NA,NA,NA,"Political Election",NA,NA,NA,"States & Local Focus","Senate Race/State Politics",3
+"67","COVID","Miscellaneous",NA,NA,"Health Crisis","Health and Safety",NA,NA,NA,"Healthcare/Pandemic",4
+"68","Crew5",NA,NA,NA,"Event/Space","Miscellaneous",NA,NA,NA,"Space Exploration/Mission",3
+"69","CrimeCrisis",NA,NA,NA,"Social Issue",NA,NA,NA,"Law & Order and Border Issues","Law Enforcement/Social Issue",3
+"70","CTCNow",NA,NA,"Other/General","Economic Policy","Economic & Infrastructure Issues",NA,NA,NA,"Likely Government Policy/Program",4
+"71","CTSen",NA,NA,NA,"Political Election","States and Local Politics",NA,NA,NA,"Senate Race/State Politics",3
+"72","Cuba",NA,NA,NA,"Foreign Affairs/Country","International Affairs",NA,NA,"International & Foreign Affairs","Foreign Policy/Country",4
+"73","CutMethane",NA,NA,NA,"Environmental Advocacy",NA,NA,"Environment and Climate","Environment & Climate","Environmental Policy",4
+"74","CyberMonday","Miscellaneous",NA,"Holidays and Observances","Economic/Shopping Holiday","Health and Safety","Economic Observances","National Security and Immigration","Economy & Finance","Economic Policy/Shopping Event",8
+"75","CyberMonth",NA,NA,NA,"Technology/Shopping","Health and Safety",NA,"National Security and Immigration",NA,"Likely Technology/Cyber Awareness",4
+"76","cybersecurity",NA,NA,NA,"Technology/Security","Miscellaneous",NA,NA,NA,"Technology/Security",3
+"77","CyberSecurityAwarenessMonth","Policies, Laws & Issues","Awareness Campaigns & Months","Other/General","Cybersecurity Advocacy",NA,NA,NA,NA,NA,4
+"78","CyberSecurityAwarenessMonth","Policies, Laws & Issues","Awareness Campaigns & Months","Holidays and Observances","Cybersecurity Advocacy",NA,NA,NA,NA,NA,4
+"79","CyberSecurityAwarenessMonth","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Other/General","Cybersecurity Advocacy",NA,NA,NA,NA,NA,4
+"80","CyberSecurityAwarenessMonth","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Holidays and Observances","Cybersecurity Advocacy",NA,NA,NA,NA,NA,4
+"81","DACA","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Immigration Policy","Social Issues","Legislation","National Security and Immigration","Rights & Social Issues","Immigration Policy",9
+"82","DARTMission","Environment & Space",NA,"Other/General","Space Exploration","Miscellaneous",NA,"Environment and Climate",NA,"Space Exploration/Mission",6
+"83","DayOfTheGirl",NA,NA,"Holidays and Observances","Social Advocacy",NA,NA,NA,"Rights & Social Issues","Women's Rights/Celebration",4
+"84","DEBATE",NA,NA,"Criticisms and Controversies","Political Event",NA,NA,NA,NA,NA,2
+"85","DebateNight",NA,NA,"Criticisms and Controversies","Political Event",NA,NA,NA,NA,NA,2
+"86","DefendWomensRights",NA,NA,NA,"Advocacy","Social Issues",NA,"Justice and Civil Rights","Rights & Social Issues","Women's Rights/Advocacy",5
+"87","DelawareDay",NA,"National Holidays & Commemorations",NA,"Cultural/Geographical",NA,NA,"State and Local Politics",NA,"State Celebration",4
+"88","Democracy","Politics & Elections",NA,"Political Issues and Advocacy","Political Advocacy/Principle",NA,NA,NA,NA,"Political Philosophy/Governance",4
+"89","Democrats","Politics & Elections",NA,NA,"Political Party",NA,NA,NA,"Political Position & Parties",NA,3
+"90","DemsCreateJobs",NA,NA,NA,"Political Statement","Political Campaign & Party Affiliations",NA,"Party and Political Alignment","Political Position & Parties","Political Slogan/Economic Policy",5
+"91","DiaDeLosMuertos","Cultural & Heritage Appreciation","Political Campaigns & Voting","Holidays and Observances","Cultural Observance",NA,NA,NA,NA,NA,4
+"92","Diwali","Cultural & Heritage Appreciation",NA,"Holidays and Observances","Cultural Observance","National Observances & Holidays","Cultural Observances","Societal and Cultural Issues",NA,"Cultural Celebration",7
+"93","DomesticViolenceAwarenessMonth","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Social Advocacy","National Observances & Holidays","Social Issues","Societal and Cultural Issues","National & Cultural Recognition","Social Issue Awareness",9
+"94","DomesticViolenceAwarenessMonth","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Social Advocacy","National Observances & Holidays","Social Issues","Societal and Cultural Issues","National & Cultural Recognition","Social Issue Awareness",9
+"95","Dreamers",NA,NA,"Other/General","Immigration Policy",NA,NA,NA,"Rights & Social Issues","Immigration Policy",4
+"96","DVAM",NA,NA,NA,"Advocacy",NA,NA,NA,NA,NA,1
+"97","DYK",NA,"Miscellaneous & General","Criticisms and Controversies","General Usage",NA,NA,"Miscellaneous and General",NA,"Common Acronym (""Did You Know"")",5
+"98","EarlyVoting",NA,"Political Campaigns & Voting","Election and Voting","Voting Advocacy","Election and Voting","Election Methods","Elections and Campaigns","Elections & Voting","Voting/Election",8
+"99","education",NA,"Miscellaneous & General","Other/General","Policy/Advocacy","Political Campaign & Party Affiliations",NA,NA,NA,"Education Policy",5
+"100","EEODayRI",NA,NA,"Other/General","Advocacy/Event",NA,NA,NA,"National & Cultural Recognition","Likely State Policy/Event",4
+"101","Election2022","Politics & Elections","Political Agendas, Bills, & Policies","Election and Voting","Political Event","Election and Voting","Election/Campaign","Elections and Campaigns","Elections & Voting","Voting/Election",9
+"102","ElectionDay","Politics & Elections","National Holidays & Commemorations","Holidays and Observances","Political Event","Election and Voting","Election/Campaign","Elections and Campaigns","Elections & Voting","Voting/Election",9
+"103","Elections","Politics & Elections",NA,NA,"Political Event",NA,NA,NA,NA,NA,2
+"104","EndALZ","Awareness & Commemoration Days",NA,"Political Issues and Advocacy","Health Advocacy",NA,NA,"Justice and Civil Rights",NA,"Healthcare (Alzheimer's Disease)",5
+"105","Endorsement",NA,NA,"Political Issues and Advocacy","Political Support",NA,NA,"Justice and Civil Rights",NA,NA,3
+"106","EndPolio",NA,"Political Agendas, Bills, & Policies","Other/General","Health Advocacy",NA,NA,"Justice and Civil Rights",NA,"Healthcare/Global Health",5
+"107","EndTheException","Miscellaneous","Political Campaigns & Voting","Political Issues and Advocacy","Social Advocacy",NA,"Political Initiatives","Environment and Climate","Policies & Governance","Likely Specific Policy/Advocacy",8
+"108","EndTheStigma",NA,NA,NA,"Advocacy",NA,NA,NA,NA,NA,1
+"109","energy",NA,NA,"Political Issues and Advocacy","Economic/Environmental","Economic & Infrastructure Issues",NA,NA,"Economy & Finance","Energy Policy",5
+"110","ENWeek",NA,NA,NA,"Event/Observance",NA,NA,NA,NA,"Likely Specific Event/Organization",2
+"111","EPAC",NA,NA,NA,"Organization/Committee","Miscellaneous",NA,NA,NA,"Likely Specific Organization/Policy",3
+"112","EqualityAct",NA,NA,"Political Issues and Advocacy","Advocacy","Social Issues",NA,"Policies and Legislation","Rights & Social Issues","Civil Rights/Legal Policy",6
+"113","EvergladesCity",NA,"National Holidays & Commemorations",NA,"Geographical",NA,NA,NA,NA,NA,2
+"114","fall",NA,NA,NA,"Seasonal","Miscellaneous",NA,NA,NA,"Seasonal",3
+"115","FarmBill","Miscellaneous","Political Agendas, Bills, & Policies","Other/General","Legislation",NA,"Legislation",NA,"Economy & Finance","Agricultural Policy/Legislation",7
+"116","FatBearWeek",NA,NA,NA,"Cultural/Environmental",NA,NA,"Specific Events and Recognitions","National & Cultural Recognition","Wildlife/Environmental Awareness",4
+"117","fentanyl",NA,NA,"Political Issues and Advocacy","Drug Policy/Health",NA,"Health/Drugs",NA,NA,"Drug Policy/Public Health",4
+"118","FIFAWorldCup","Sports",NA,"Entertainment, Sports, and Media","International Sports Event","Miscellaneous","Sports","International Affairs and Global Issues",NA,"Sports Event",7
+"119","FightRetailCrimeDay",NA,NA,NA,"Advocacy",NA,NA,NA,NA,"Law Enforcement/Crime Prevention",2
+"120","FilipinoAmericanHistoryMonth","Cultural & Heritage Appreciation","Awareness Campaigns & Months",NA,"Cultural Celebration/History",NA,NA,NA,"National & Cultural Recognition","Cultural Celebration/Heritage",5
+"121","FirePreventionWeek","Miscellaneous",NA,"Other/General","Public Safety","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Public Safety/Awareness",6
+"122","FIREToddYoung",NA,NA,NA,"Political Statement/Critique",NA,NA,NA,NA,NA,1
+"123","FirstResponder",NA,NA,"Support, Appreciation, and Solidarity","Profession/Occupation",NA,NA,NA,NA,NA,2
+"124","FirstRespondersDay",NA,NA,"Holidays and Observances","Civil Service Appreciation","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Public Safety/Law Enforcement",5
+"125","FITN",NA,NA,"Other/General","Political Event",NA,NA,NA,NA,"Likely Political Event/Organization",3
+"126","Florida","States & Locations","Geographical & Local Issues","States and Regions","State Specific","States and Local Politics","Geographical","State and Local Politics","States & Local Focus","State Politics",9
+"127","Florida","States & Locations","Geographical & Local Issues","States and Regions","State Specific","States and Local Politics","Geographical","State and Local Politics","States & Local Focus","State Politics",9
+"128","FloridaStrong",NA,NA,NA,"Geographical/Support Statement",NA,NA,NA,NA,NA,1
+"129","FLSEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"130","ForestProductsWeek",NA,NA,"Other/General","Environmental/Economic Advocacy",NA,NA,NA,"National & Cultural Recognition","Industry Awareness/Environmental Policy",4
+"131","ForTheLand",NA,NA,NA,"Advocacy/Environmental",NA,NA,NA,NA,NA,1
+"132","FortMyers",NA,NA,NA,"Geographical",NA,NA,"State and Local Politics","States & Local Focus","Geographic Area/Local Politics",4
+"133","fortwayneindiana",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"134","FoxNews",NA,NA,NA,"Media Outlet",NA,"Media","Specific Events and Recognitions",NA,"Media/News Outlet",4
+"135","freedom",NA,"Miscellaneous & General",NA,"General Principle","Miscellaneous",NA,NA,NA,"Political Philosophy/Values",4
+"136","GA","States & Locations","Geographical & Local Issues","Election and Voting","Geographical",NA,NA,"State and Local Politics","Elections & Voting","State Politics (Georgia)",7
+"137","GA","States & Locations","Geographical & Local Issues","Election and Voting","Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics (Georgia)",7
+"138","GAPol",NA,NA,NA,"Political Coverage",NA,NA,NA,NA,NA,1
+"139","GASEN",NA,NA,"Other/General","Political Event","States and Local Politics",NA,"State and Local Politics",NA,"Senate Race/State Politics",5
+"140","GASenate",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"141","GASenDebate",NA,NA,NA,"Political Event","States and Local Politics","Debates","State and Local Politics",NA,"Senate Race/Political Event (Georgia)",5
+"142","gasprices",NA,"Economic & Financial","Criticisms and Controversies","Economic/Environmental","Economic & Infrastructure Issues",NA,"Economic Issues","Economy & Finance","Economic Policy/Energy",7
+"143","GBO",NA,NA,NA,"Cultural/Sports",NA,NA,NA,NA,"Likely Specific Organization/Team",2
+"144","Georgia",NA,NA,NA,"Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics",4
+"145","GeorgiaRunOff","States & Locations",NA,NA,"Political Election",NA,NA,NA,NA,NA,2
+"146","GetCovered","Campaign & Political Movements",NA,"Support, Appreciation, and Solidarity","Health Advocacy","Health and Safety",NA,NA,NA,"Healthcare/Insurance",5
+"147","GetOutTheVote",NA,"Political Campaigns & Voting","Other/General","Voting Advocacy","Election and Voting",NA,NA,"Elections & Voting","Voting/Election",6
+"148","GivingTuesday",NA,NA,"Holidays and Observances","Social Initiative","National Observances & Holidays",NA,NA,NA,"Charitable Giving/Social Movement",4
+"149","GoArmy",NA,NA,NA,"Cultural/Sports",NA,NA,"Party and Political Alignment",NA,"Military Support",3
+"150","GoBlue",NA,NA,NA,"Cultural/Sports",NA,NA,"Party and Political Alignment",NA,"Likely Team Support/Sports",3
+"151","GoDawgs",NA,NA,NA,"Cultural/Sports",NA,NA,NA,NA,NA,1
+"152","GoGreen",NA,NA,NA,"Advocacy",NA,NA,"Party and Political Alignment",NA,"Environmental Movement",3
+"153","GoJacks",NA,NA,NA,"Sports/Team Reference",NA,NA,"Party and Political Alignment",NA,"Likely Team Support/Sports",3
+"154","GoMcDermott",NA,NA,NA,"Political Support",NA,NA,NA,NA,NA,1
+"155","GoodAirports",NA,NA,NA,"Infrastructure Advocacy",NA,NA,NA,NA,"Infrastructure/Transportation Policy",2
+"156","GOP","Politics & Elections",NA,"Political Issues and Advocacy","Political Party","Political Campaign & Party Affiliations","Political Party","Party and Political Alignment","Political Position & Parties","Political Party (Republicans)",8
+"157","GoPackGo",NA,NA,NA,"Cultural/Sports",NA,NA,"Party and Political Alignment",NA,"Likely Team Support/Sports",3
+"158","GoPokes",NA,NA,NA,"Cultural/Sports",NA,"Sports/Collegiate","Party and Political Alignment",NA,"Likely Team Support/Sports",4
+"159","GOTV","Politics & Elections","Political Campaigns & Voting","Election and Voting","Political Advocacy","Election and Voting","Election/Campaign Actions","Elections and Campaigns","Elections & Voting","Voting/Election (""Get Out The Vote"")",9
+"160","GoVote",NA,"Political Campaigns & Voting","Election and Voting","Civic Engagement","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Voting/Election",7
+"161","goyotes",NA,NA,NA,"Cultural/Sports",NA,NA,NA,NA,NA,1
+"162","GreatAmericanOutdoorsAct",NA,NA,NA,"Legislation/Conservation",NA,NA,"Policies and Legislation","Policies & Governance","Environmental Policy/Legislation",4
+"163","GreatShakeOut",NA,NA,NA,"Event/Observance",NA,NA,"Environment and Climate",NA,"Earthquake Preparedness",3
+"164","GTOV",NA,NA,NA,"Civic Engagement",NA,NA,NA,NA,NA,1
+"165","GunSenseCandidate","Miscellaneous",NA,"Other/General","Gun Policy Advocacy",NA,NA,"Justice and Civil Rights","Rights & Social Issues","Gun Control/Political Position",6
+"166","GunSenseCandidate","Policies, Laws & Issues",NA,"Other/General","Gun Policy Advocacy",NA,NA,"Justice and Civil Rights","Rights & Social Issues","Gun Control/Political Position",6
+"167","Haiti",NA,NA,"States and Regions","Geographical","International Affairs",NA,NA,"International & Foreign Affairs","Foreign Policy/Country",5
+"168","Halloween","Celebrations & Holidays","National Holidays & Commemorations","Holidays and Observances","Cultural Observance","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration",8
+"169","Halloween","Celebrations & Holidays","National Holidays & Commemorations","Holidays and Observances","Cultural Observance","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration",8
+"170","HappyDiwali",NA,NA,"Holidays and Observances","Cultural Celebration","National Observances & Holidays","Cultural Observances","Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration (Diwali)",7
+"171","HappyHalloween","Celebrations & Holidays",NA,"Other/General","Cultural Observance",NA,NA,"Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration (Halloween)",6
+"172","HappyThanksgiving","Celebrations & Holidays",NA,"Other/General","Cultural Observance",NA,NA,"Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration",6
+"173","HeadStartAwareness",NA,NA,NA,"Advocacy/Education",NA,NA,NA,"National & Cultural Recognition","Education/Children's Program",3
+"174","HFX2022",NA,NA,"Other/General","Event",NA,NA,NA,NA,"Likely Specific Event/Organization",3
+"175","HispanicHeritageMonth","Cultural & Heritage Appreciation","Awareness Campaigns & Months","Holidays and Observances","Cultural Observance","National Observances & Holidays","Cultural Observances","Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration/Heritage",9
+"176","HOOSIER",NA,NA,NA,"Cultural/Geographical",NA,NA,NA,NA,NA,1
+"177","HuracanIan","Natural Events & Disasters",NA,"States and Regions","Natural Disaster",NA,NA,NA,NA,NA,3
+"178","HurricaneNicole","Natural Events & Disasters",NA,NA,"Natural Disaster",NA,NA,"Specific Events and Recognitions",NA,"Weather/Natural Disaster",4
+"179","IA",NA,"Geographical & Local Issues",NA,"Geographical",NA,NA,NA,NA,NA,2
+"180","IAGov","States & Locations","Geographical & Local Issues",NA,"Political Position",NA,NA,NA,NA,NA,3
+"181","Ian",NA,NA,"Other/General","Event/Person",NA,NA,NA,NA,"Likely Specific Reference/Person",3
+"182","IASEN",NA,NA,NA,"Political Election","States and Local Politics",NA,"State and Local Politics","States & Local Focus","Senate Race/State Politics (Iowa)",5
+"183","IBEW",NA,NA,NA,"Organization","States and Local Politics",NA,NA,NA,"Labor Union/Organization",3
+"184","ICYMI","Miscellaneous","Political Campaigns & Voting","Other/General","Information Sharing",NA,"Media","Miscellaneous and General",NA,"Common Acronym (""In Case You Missed It"")",7
+"185","Idaho","States & Locations","Geographical & Local Issues","States and Regions","Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics",7
+"186","IDPol",NA,NA,NA,"Politics",NA,NA,NA,NA,NA,1
+"187","ILSenateForum",NA,NA,NA,"Political Event",NA,NA,NA,NA,NA,1
+"188","INDEMS",NA,NA,NA,"Political Party/Group",NA,NA,NA,NA,NA,1
+"189","Indiana","States & Locations","Geographical & Local Issues","States and Regions","Geographical",NA,NA,NA,NA,NA,4
+"190","Indiana","States & Locations","Geographical & Local Issues","States and Regions","Geographical",NA,NA,NA,NA,NA,4
+"191","Indianapolis","States & Locations",NA,"States and Regions","Geographical",NA,NA,NA,NA,NA,3
+"192","IndigenousPeopleDay","Cultural & Heritage Appreciation","Social & Civil Rights","Holidays and Observances","Cultural Observance",NA,NA,NA,NA,NA,4
+"193","indylabor",NA,NA,NA,"Advocacy",NA,NA,NA,NA,NA,1
+"194","inflation","Economic & Business","Economic & Financial","Criticisms and Controversies","Economic Topic","Economic & Infrastructure Issues",NA,"Economic Issues",NA,"Economic Policy/Issue",7
+"195","InflationReductionAct","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Economic Policy","Economic & Infrastructure Issues","Legislation","Policies and Legislation","Policies & Governance","Economic Policy/Legislation",9
+"196","Infrastructure",NA,"Political Agendas, Bills, & Policies","Political Issues and Advocacy","Political Topic/Issue",NA,NA,NA,NA,NA,3
+"197","INSEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"198","InvestInKids",NA,NA,NA,"Advocacy",NA,NA,"Policies and Legislation","Policies & Governance","Children's Welfare/Policy",4
+"199","Iowa","States & Locations","Geographical & Local Issues","States and Regions","Geographical",NA,NA,"State and Local Politics",NA,"State Politics",6
+"200","IowaAg",NA,NA,NA,"Agriculture",NA,NA,NA,"Elections & Voting","Agriculture/State Policy (Iowa)",3
+"201","Iran","International Issues",NA,NA,"Foreign Relations","International Affairs",NA,"International Affairs and Global Issues","International & Foreign Affairs","Foreign Policy/Country",6
+"202","IranProtest","International Issues",NA,"States and Regions","Foreign Affairs/Protest",NA,NA,NA,NA,NA,3
+"203","IRS",NA,NA,"Criticisms and Controversies","Government Agency",NA,NA,NA,NA,"Government Agency (Taxation)",3
+"204","Israel",NA,NA,NA,"Foreign Affairs/Country",NA,NA,"International Affairs and Global Issues","International & Foreign Affairs","Foreign Policy/Country",4
+"205","IVoted",NA,"Political Campaigns & Voting","Election and Voting","Voting/Civic Engagement",NA,NA,NA,NA,NA,3
+"206","January6thCommitteeHearing",NA,NA,"Criticisms and Controversies","Political Event",NA,NA,NA,NA,NA,2
+"207","jobs",NA,NA,"Political Issues and Advocacy","Economic Issue","Economic & Infrastructure Issues",NA,"Economic Issues","Economy & Finance","Economic Policy/Employment",6
+"208","KendraCan",NA,NA,NA,"Political Support",NA,NA,NA,NA,NA,1
+"209","KYSen",NA,NA,NA,"Political Election","States and Local Politics",NA,NA,"States & Local Focus","Senate Race/State Politics (Kentucky)",4
+"210","LaGov",NA,NA,NA,"Political Position",NA,NA,NA,NA,NA,1
+"211","LakeAndBlake",NA,NA,NA,"Uncertain",NA,NA,NA,NA,NA,1
+"212","LaLege",NA,NA,NA,"Political",NA,NA,NA,NA,NA,1
+"213","LandGrant",NA,NA,NA,"Education/Institutional",NA,NA,NA,NA,NA,1
+"214","LASen",NA,NA,"Other/General","Political Election",NA,NA,NA,NA,NA,2
+"215","LastWord",NA,NA,NA,"Media/Show","Miscellaneous",NA,"Miscellaneous and General","Elections & Voting","Likely Media/Communication",5
+"216","LatinaEqualPay","Advocacy & Rights","Political Campaigns & Voting","Other/General","Social Advocacy",NA,"Economic Policy","Societal and Cultural Issues",NA,"Gender Equality/Economic Policy",7
+"217","LatinaEqualPayDay",NA,"Social & Civil Rights","Election and Voting","Social Advocacy",NA,NA,"Societal and Cultural Issues",NA,"Gender Equality/Economic Policy",5
+"218","LawEnforcement",NA,NA,"Support, Appreciation, and Solidarity","Public Service/Security",NA,NA,NA,NA,NA,2
+"219","LBGTQ","Cultural & Heritage Appreciation","Social & Civil Rights",NA,"Social Advocacy",NA,NA,NA,NA,NA,3
+"220","LeadRight","Campaign & Political Movements",NA,"Support, Appreciation, and Solidarity","Political Advocacy",NA,NA,NA,NA,"Political Slogan (Conservative)",4
+"221","LetsGo",NA,NA,NA,"General Expression/Motivation",NA,NA,NA,NA,"General Expression/Motivation",2
+"222","LevelUp",NA,NA,NA,"Cultural","Miscellaneous",NA,"Environment and Climate",NA,"General Expression/Motivation",4
+"223","LGBTQHistoryMonth","Cultural & Heritage Appreciation","Social & Civil Rights","Political Issues and Advocacy","Cultural Celebration/History","Social Issues",NA,"Societal and Cultural Issues","Rights & Social Issues","Cultural Celebration/LGBTQ Heritage",8
+"224","LIHEAP",NA,NA,NA,"Government Program","Miscellaneous",NA,NA,"National & Cultural Recognition","Energy Assistance Program",4
+"225","LockTheClock",NA,NA,NA,"Policy/Advocacy",NA,NA,NA,"Law & Order and Border Issues","Likely Specific Policy/Advocacy",3
+"226","LoveIsLove",NA,"Social & Civil Rights","Support, Appreciation, and Solidarity","LGBTQ+ Rights/Advocacy",NA,NA,NA,NA,NA,3
+"227","MahsaAmini",NA,NA,"Other/General","Person/Event",NA,NA,NA,NA,"Likely Specific Individual",3
+"228","ManufacturingDay","Economic & Business",NA,"Support, Appreciation, and Solidarity","Economic Promotion","National Observances & Holidays","Economic Observances","Economic Issues","Economy & Finance","Industry Awareness/Manufacturing",8
+"229","Mariners",NA,NA,"Other/General","Sports/Team Reference",NA,NA,NA,NA,NA,2
+"230","MarriageEquality","Advocacy & Rights","Social & Civil Rights","Support, Appreciation, and Solidarity","Social Advocacy","Social Issues","Social Movements","Justice and Civil Rights","Rights & Social Issues","LGBTQ Rights/Legal Policy",9
+"231","Medicare","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Healthcare Policy",NA,NA,"Policies and Legislation","Economy & Finance","Healthcare Policy/Program",7
+"232","mentalhealth",NA,NA,"Political Issues and Advocacy","Health","Miscellaneous",NA,NA,NA,"Mental Health Awareness",4
+"233","MentalHealthAwarenessWeek",NA,"Awareness Campaigns & Months",NA,"Advocacy Event","Health and Safety",NA,"Societal and Cultural Issues","National & Cultural Recognition","Mental Health Awareness",6
+"234","MentalIllnessAwarenessWeek","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Health Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Mental Health Awareness",8
+"235","MFGDay22",NA,NA,"Other/General","Manufacturing Advocacy",NA,NA,NA,"National & Cultural Recognition","Likely Industry Awareness/Manufacturing",4
+"236","MidtermElections2022","Politics & Elections","Political Campaigns & Voting",NA,"Political Event",NA,NA,NA,NA,NA,3
+"237","Midterms2022","Politics & Elections","Political Campaigns & Voting","Election and Voting","Political Event","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Election/Political Event",8
+"238","MilitaryFamilyAppreciationMonth","Awareness & Commemoration Days",NA,"Holidays and Observances","Military Appreciation",NA,NA,NA,NA,"Military Support/Family Appreciation",4
+"239","MilitaryFamilyMonth","Military & Veterans",NA,"Support, Appreciation, and Solidarity","Military Appreciation","National Observances & Holidays",NA,NA,NA,"Military Support/Family Appreciation",5
+"240","MOSEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"241","NAHM",NA,NA,"Other/General","Cultural Celebration",NA,NA,NA,NA,"Likely Cultural Heritage/Movement",3
+"242","National4HWeek",NA,NA,"Holidays and Observances","Youth Organization/Advocacy","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Youth Organization/Education",5
+"243","National4HWeek",NA,NA,"Other/General","Youth Organization/Advocacy","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Youth Organization/Education",5
+"244","NationalAdoptionDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Social Observance","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Family/Child Welfare",8
+"245","NationalComingOutDay","Cultural & Heritage Appreciation","Awareness Campaigns & Months","Holidays and Observances","Social Rights Advocacy","Social Issues","Social Movements","Societal and Cultural Issues","National & Cultural Recognition","LGBTQ Rights/Celebration",9
+"246","NationalComingOutDay","Cultural & Heritage Appreciation","Social & Civil Rights","Holidays and Observances","Social Rights Advocacy","Social Issues","Social Movements","Societal and Cultural Issues","National & Cultural Recognition","LGBTQ Rights/Celebration",9
+"247","NationalDayOfTheDeployed",NA,"Awareness Campaigns & Months","Other/General","Observance","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Military Support",7
+"248","NationalDiabetesAwarenessMonth","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Health Advocacy",NA,NA,NA,NA,NA,4
+"249","NationalFamilyCaregiversMonth",NA,NA,"Other/General","Observance/Advocacy",NA,NA,NA,NA,NA,2
+"250","NationalFarmersDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Occupation Appreciation","National Observances & Holidays","National Observances","Environment and Climate","National & Cultural Recognition","Agriculture/Industry Appreciation",9
+"251","NationalFirstRespondersDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Occupation Appreciation","National Observances & Holidays","National Observances","Societal and Cultural Issues","National & Cultural Recognition","Public Safety/First Responder Appreciation",9
+"252","NationalManufacturingDay","Economic & Business",NA,NA,"Economic Promotion","National Observances & Holidays",NA,"Policies and Legislation","National & Cultural Recognition","Industry Awareness/Manufacturing",6
+"253","NationalMentalIllnessAwarenessWeek",NA,"Awareness Campaigns & Months","Other/General","Advocacy Event","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Mental Health Awareness",6
+"254","NationalMentalIllnessAwarenessWeek",NA,"Awareness Campaigns & Months","Other/General","Advocacy Event","National Observances & Holidays",NA,NA,"National & Cultural Recognition","Mental Health Awareness",6
+"255","NationalMinersDay",NA,NA,"Holidays and Observances","Labor Appreciation","National Observances & Holidays","National Observances",NA,"National & Cultural Recognition","Industry Appreciation/Mining",6
+"256","NationalNewspaperWeek",NA,NA,"Holidays and Observances","Media Appreciation/Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Media/Press Freedom",6
+"257","NationalRuralHealthDay","Awareness & Commemoration Days",NA,"Holidays and Observances","Health Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Healthcare/Rural Health",7
+"258","NationalVeteransSmallBusinessWeek",NA,NA,"Other/General","Observance/Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Veterans/Small Business Support",6
+"259","NationalWarriorCallDay",NA,NA,"Holidays and Observances","Military Appreciation",NA,NA,"Societal and Cultural Issues","National & Cultural Recognition","Military Support/Veterans",5
+"260","NationalWildlifeRefugeWeek",NA,NA,"Holidays and Observances","Environmental Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Environmental Conservation/Wildlife",6
+"261","NationalWildlifeRefugeWeek",NA,NA,"Holidays and Observances","Environmental Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Environmental Conservation/Wildlife",6
+"262","NativeAmericanHeritageDay","Cultural & Heritage Appreciation",NA,"Holidays and Observances","Cultural Observance","National Observances & Holidays","Cultural Observances","Societal and Cultural Issues","National & Cultural Recognition","Cultural Celebration/Native American",8
+"263","NativeWomensEqualPay",NA,NA,NA,"Equal Rights/Advocacy","National Observances & Holidays",NA,NA,"Rights & Social Issues","Gender Equality/Native American",4
+"264","NavyDay",NA,NA,"Holidays and Observances","Military Appreciation",NA,NA,NA,"National & Cultural Recognition","Military Support/Navy",4
+"265","NAW2022",NA,NA,NA,"Event",NA,NA,NA,"National & Cultural Recognition","Likely Specific Event/Organization",3
+"266","NCSen",NA,NA,"Other/General","Political Position","States and Local Politics",NA,"State and Local Politics","States & Local Focus","Senate Race/State Politics (North Carolina)",6
+"267","ND",NA,NA,"Other/General","Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics (North Dakota)",5
+"268","NDAA",NA,"Political Agendas, Bills, & Policies","Other/General","Legislation","Miscellaneous",NA,"Policies and Legislation","Policies & Governance","National Defense Authorization Act",7
+"269","NDEAM",NA,NA,"Other/General","Observance",NA,NA,NA,NA,"Disability Employment Awareness",3
+"270","NevadaDay","States & Locations",NA,"Holidays and Observances","State Celebration/History",NA,NA,NA,"National & Cultural Recognition","State Celebration (Nevada)",5
+"271","NEW",NA,NA,"Other/General","Uncertain","Miscellaneous",NA,"Miscellaneous and General",NA,"General Expression/Unknown",5
+"272","NewProfilePic","Fun & Social Media Trends",NA,"States and Regions","Social Media Usage",NA,NA,"Miscellaneous and General",NA,"Social Media Activity",5
+"273","NewYork","States & Locations","Geographical & Local Issues",NA,"Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics (New York)",6
+"274","NewYork","States & Locations","Geographical & Local Issues",NA,"Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics (New York)",6
+"275","NHPolitics",NA,NA,"Other/General","Politics","States and Local Politics","State Politics","State and Local Politics","Elections & Voting","State Politics (New Hampshire)",7
+"276","NHSEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"277","Nicole",NA,NA,"Other/General","Uncertain",NA,NA,NA,NA,"Likely Specific Reference/Person",3
+"278","NorthDakota",NA,NA,"States and Regions","Geographical",NA,NA,"State and Local Politics",NA,"State Politics",4
+"279","November8th",NA,NA,NA,"Date/Observance",NA,NA,NA,"Elections & Voting","Likely Specific Date/Event",3
+"280","NV","States & Locations",NA,"States and Regions","Geographical",NA,NA,NA,NA,NA,3
+"281","NVSen",NA,NA,NA,"Political Position","States and Local Politics",NA,"State and Local Politics",NA,"Senate Race/State Politics (Nevada)",4
+"282","NWI",NA,NA,NA,"Geographical/Local",NA,NA,NA,NA,NA,1
+"283","NY",NA,NA,"States and Regions","Geographical",NA,NA,NA,NA,NA,2
+"284","OHSen",NA,NA,NA,"Political Position",NA,NA,NA,NA,NA,1
+"285","Oklahoma","States & Locations","Geographical & Local Issues","States and Regions","Geographical",NA,NA,"State and Local Politics","States & Local Focus","State Politics",7
+"286","OklahomaStandard",NA,NA,"States and Regions","Cultural Expression/State Pride",NA,NA,NA,"States & Local Focus","State Cultural Reference/Slogan",4
+"287","OKSen",NA,NA,NA,"Political Position",NA,NA,NA,NA,NA,1
+"288","OnlyForward",NA,NA,"Other/General","Political Campaign","Political Campaign & Party Affiliations",NA,NA,NA,"General Expression/Motivation",4
+"289","OnlyInAlaska",NA,NA,NA,"Cultural/Geographical",NA,NA,NA,NA,NA,1
+"290","OnThisDay","Fun & Social Media Trends",NA,"Other/General","General Usage",NA,NA,"Miscellaneous and General",NA,"Historical Reference",5
+"291","OPEC",NA,NA,"States and Regions","Foreign Affairs/Organization",NA,NA,NA,NA,"Economic/International Organization (Oil)",3
+"292","OpenBorder",NA,NA,"Political Issues and Advocacy","Immigration Policy",NA,NA,NA,NA,NA,2
+"293","OpenEnrollment",NA,NA,"Other/General","Healthcare Policy",NA,NA,NA,NA,"Healthcare Policy/Enrollment Period",3
+"294","OrionSpacecraft","Environment & Space",NA,"Other/General","Science & Technology","Miscellaneous",NA,"Environment and Climate",NA,"Space Exploration/Technology",6
+"295","OrPol",NA,NA,NA,"Politics",NA,NA,NA,NA,NA,1
+"296","OTD",NA,NA,"Other/General","General Usage",NA,NA,"Miscellaneous and General",NA,"Historical Reference (""On This Day"")",4
+"297","PACTAct","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Other/General","Legislation",NA,NA,"Policies and Legislation","Policies & Governance","Specific Legislation/Policy",7
+"298","PalmBeach",NA,NA,"Other/General","Geographical",NA,NA,NA,NA,NA,2
+"299","PanCANawareness",NA,NA,"Other/General","Advocacy",NA,NA,NA,NA,"Health Awareness (Cancer)",3
+"300","PASEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"301","PASenDebate",NA,NA,NA,"Political Event",NA,NA,NA,NA,NA,1
+"302","PassPWFA",NA,NA,"Other/General","Advocacy",NA,NA,NA,NA,"Advocacy/Legislation (Pregnant Workers Fairness Act)",3
+"303","PearlHarbor",NA,NA,"Other/General","Historical Event","National Observances & Holidays",NA,"Specific Events and Recognitions","National & Cultural Recognition","Historical Event/Memorial",6
+"304","PearlHarborRememberanceDay","Awareness & Commemoration Days","National Holidays & Commemorations","Holidays and Observances","Historical Observance","National Observances & Holidays",NA,"Specific Events and Recognitions","National & Cultural Recognition","Historical Event/Memorial",8
+"305","PeopleOverPolitics",NA,NA,NA,"Political Philosophy/Advocacy","Political Campaign & Party Affiliations",NA,NA,NA,"Political Slogan/Philosophy",3
+"306","phonebank",NA,NA,NA,"Political Activity",NA,NA,NA,NA,NA,1
+"307","PHTYD",NA,NA,NA,"Uncertain",NA,NA,NA,NA,"Likely Specific Event/Organization",2
+"308","PHXPD",NA,NA,NA,"Organization",NA,NA,NA,NA,NA,1
+"309","podcast","Media & Technology",NA,"Entertainment, Sports, and Media","Media",NA,NA,NA,NA,NA,3
+"310","Poll",NA,NA,NA,"General Political Tool","Miscellaneous",NA,NA,"Elections & Voting","Election/Political Polling",4
+"311","Postseason",NA,NA,NA,"Sports",NA,NA,NA,NA,NA,1
+"312","PPI",NA,NA,NA,"Economic/Finance",NA,NA,"Policies and Legislation",NA,"Likely Economic/Policy Reference",3
+"313","PregnantWorkersFairnessAct",NA,NA,NA,"Legislation",NA,NA,NA,"Policies & Governance","Legislation/Women's Rights",3
+"314","Priorities",NA,NA,"Other/General","General",NA,NA,NA,NA,NA,2
+"315","PROAct","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Other/General","Legislation",NA,NA,"Policies and Legislation","Policies & Governance","Labor Rights/Legislation",7
+"316","PSLF","Policies, Laws & Issues",NA,NA,"Economic/Student Advocacy",NA,NA,"Policies and Legislation","Rights & Social Issues","Education/Loan Forgiveness Program",5
+"317","PuertoRico","International Issues",NA,"States and Regions","Geographical",NA,NA,NA,NA,NA,3
+"318","RealAmerica",NA,NA,NA,"Cultural/Patriotic Expression",NA,NA,NA,NA,"Cultural/Patriotic Expression",2
+"319","RedCupRebellion",NA,NA,"Other/General","Uncertain",NA,NA,NA,NA,"Likely Specific Event/Movement",3
+"320","RedWave","Politics & Elections","Political Agendas, Bills, & Policies","Election and Voting","Political Advocacy","Political Campaign & Party Affiliations","Political Movement","Party and Political Alignment","Political Position & Parties","Political Expression (Conservative Victory)",9
+"321","RefugeWeek",NA,NA,"Other/General","Environmental/Wildlife Advocacy",NA,NA,NA,NA,"Environmental/Wildlife Conservation",3
+"322","RespectForMarriage","Advocacy & Rights","Social & Civil Rights","Support, Appreciation, and Solidarity","Social Rights Advocacy",NA,NA,NA,NA,NA,4
+"323","RespectForMarriage","Advocacy & Rights","Political Campaigns & Voting","Support, Appreciation, and Solidarity","Social Rights Advocacy",NA,NA,NA,NA,NA,4
+"324","RevdUp",NA,NA,NA,"Uncertain",NA,NA,"Miscellaneous and General",NA,"Likely Specific Event/Movement",3
+"325","RingTheBell",NA,NA,NA,"General Expression/Motivation",NA,NA,"Miscellaneous and General",NA,"Likely Symbolic Expression/Advocacy",3
+"326","RJCLasVegas",NA,NA,NA,"Uncertain","Miscellaneous",NA,"Policies and Legislation",NA,"Likely Specific Event/Organization",4
+"327","RNDF",NA,NA,NA,"Event",NA,NA,NA,NA,"Likely Specific Event/Organization",2
+"328","Roe",NA,NA,"Political Issues and Advocacy","Policy/Advocacy",NA,"Legislation/Social Issues","Justice and Civil Rights",NA,"Abortion Rights/Reference to Roe v. Wade",5
+"329","RoeRoeRoeYourVote",NA,NA,"Political Issues and Advocacy","Voting/Civic Engagement with Roe v. Wade reference","Social Issues",NA,"Justice and Civil Rights","Elections & Voting","Abortion Rights/Voting Campaign",6
+"330","Roevember",NA,NA,"Political Issues and Advocacy","Advocacy",NA,NA,NA,NA,NA,2
+"331","Roevember",NA,NA,"Political Issues and Advocacy","Advocacy",NA,NA,NA,NA,NA,2
+"332","RoevemberIsComing",NA,NA,"Political Issues and Advocacy","Policy/Advocacy",NA,NA,"Justice and Civil Rights","Rights & Social Issues","Abortion Rights/Campaign",5
+"333","RoeVWade","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Legal/Reproductive Rights","Social Issues",NA,"Justice and Civil Rights","Elections & Voting","Abortion Rights/Legal Case",8
+"334","SAINTS",NA,NA,NA,"Sports/Cultural",NA,NA,NA,NA,NA,1
+"335","SaveAmerica","Campaign & Political Movements",NA,"Political Issues and Advocacy","Patriotic Expression/Advocacy","Political Campaign & Party Affiliations",NA,"Party and Political Alignment","Political Position & Parties","Political Slogan",7
+"336","SaveOurStages",NA,NA,NA,"Advocacy",NA,NA,NA,NA,NA,1
+"337","SchoolPsychWeek",NA,NA,NA,"Observance/Advocacy",NA,NA,NA,NA,"Education/Mental Health Awareness",2
+"338","SCOTUS","Policies, Laws & Issues","Political Agendas, Bills, & Policies","Political Issues and Advocacy","Judicial Institution","Miscellaneous","Judicial",NA,NA,"U.S. Supreme Court",7
+"339","SecureTheBorder","Policies, Laws & Issues",NA,"Political Issues and Advocacy","Immigration Policy",NA,NA,"National Security and Immigration","Law & Order and Border Issues","Immigration Policy",6
+"340","SemperFi","Military & Veterans",NA,"Support, Appreciation, and Solidarity","Military Appreciation",NA,"Military",NA,NA,"Military Slogan (U.S. Marines)",5
+"341","SemperFidelis","Military & Veterans",NA,"Other/General","Military Appreciation",NA,NA,NA,NA,"Military Slogan (U.S. Marines)",4
+"342","Senate",NA,NA,"Other/General","Political Institution",NA,NA,NA,NA,"U.S. Senate/General Politics",3
+"343","SFRC",NA,NA,NA,"Organization",NA,NA,NA,NA,"Foreign Relations Committee",2
+"344","ShakeOut",NA,NA,NA,"Advocacy Event",NA,NA,NA,NA,"Likely Disaster Preparedness/Earthquake",2
+"345","ShopLocal","Campaign & Political Movements",NA,NA,"Economic/Local Business Advocacy",NA,NA,NA,NA,NA,2
+"346","ShopSmall","Economic & Business","Political Campaigns & Voting","Support, Appreciation, and Solidarity","Economic Promotion",NA,NA,"Economic Issues","Economy & Finance","Economic/Small Business Support",7
+"347","SmallBiz","Economic & Business",NA,"Support, Appreciation, and Solidarity","Economic Advocacy",NA,NA,"Economic Issues","Economy & Finance","Small Business/Economy",6
+"348","SmallBizSatuday","Economic & Business",NA,"Other/General","Economic Advocacy",NA,NA,NA,NA,NA,3
+"349","SmallBusinessSaturday","Economic & Business","Awareness Campaigns & Months","Holidays and Observances","Economic Promotion","National Observances & Holidays","Economic Observances","Economic Issues","Economy & Finance","Economic Event/Small Business Support",9
+"350","SocialSecurity","Policies, Laws & Issues",NA,"Other/General","Social/Economic Policy",NA,"Economic Policy","Policies and Legislation","Economy & Finance","Social Welfare Policy",7
+"351","SoloPalante",NA,NA,NA,"Cultural",NA,NA,NA,"Environment & Climate","Likely Cultural Expression/General Motivation",3
+"352","SoybeanWatch",NA,NA,NA,"Agriculture",NA,NA,NA,NA,NA,1
+"353","SpeakOutAct",NA,NA,NA,"Advocacy",NA,NA,"Justice and Civil Rights",NA,"Advocacy/Legislation",3
+"354","SpiritDay",NA,NA,NA,"Cultural Celebration",NA,NA,NA,NA,"LGBTQ Awareness/Support",2
+"355","SpotifyWrapped","Miscellaneous","Miscellaneous & General","Entertainment, Sports, and Media","Pop Culture","Miscellaneous",NA,"Miscellaneous and General",NA,"Cultural/Entertainment Reference",7
+"356","SPR",NA,NA,NA,"Economic/Finance",NA,NA,NA,NA,"Likely Economic/Policy Reference",2
+"357","SteubenCounty",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"358","STLCards",NA,NA,NA,"Sports",NA,NA,NA,NA,"Sports/Local Reference (St. Louis Cardinals)",2
+"359","Taiwan","International Issues",NA,"Political Issues and Advocacy","Geographical/Foreign Relations","International Affairs","International Politics","International Affairs and Global Issues","International & Foreign Affairs","International Relations/Geopolitical",8
+"360","TakeBackDay",NA,NA,"Other/General","Event/Advocacy",NA,NA,NA,NA,"Likely Advocacy or Specific Event",3
+"361","Tampa",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"362","TBT","Fun & Social Media Trends",NA,"Entertainment, Sports, and Media","General Usage",NA,NA,"Miscellaneous and General",NA,"Cultural (Throwback Thursday)",5
+"363","teachers",NA,NA,"Support, Appreciation, and Solidarity","Profession/Education","Miscellaneous",NA,NA,NA,"Education/Profession",4
+"364","TeamMcDermott",NA,NA,NA,"Political Campaign",NA,NA,NA,NA,NA,1
+"365","TeamUSA",NA,NA,"Support, Appreciation, and Solidarity","Sports Support",NA,NA,"Party and Political Alignment",NA,"Sports/National Pride",4
+"366","TerreHaute",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"367","ThankAFarmer",NA,NA,"Support, Appreciation, and Solidarity","Agricultural Appreciation",NA,NA,NA,NA,"Agriculture Appreciation",3
+"368","Thanksgiving","Celebrations & Holidays","National Holidays & Commemorations","Holidays and Observances","National Observance","National Observances & Holidays","National Observances","Societal and Cultural Issues",NA,"National Holiday/Cultural",8
+"369","TheRiceStuff",NA,NA,NA,"Cultural/Food or Specific Campaign/Event",NA,NA,NA,NA,NA,1
+"370","ThrowbackThursday",NA,NA,NA,"Social Media Trend",NA,NA,"Miscellaneous and General",NA,"Cultural (Nostalgia)",3
+"371","TikTok","Media & Technology","Miscellaneous & General","Entertainment, Sports, and Media","Media",NA,NA,NA,NA,NA,4
+"372","TransAwarenessWeek",NA,NA,"Holidays and Observances","Observance/Advocacy","Social Issues",NA,"Societal and Cultural Issues","National & Cultural Recognition","LGBTQ Rights/Transgender Awareness",6
+"373","TransDayOfRemembrance","Awareness & Commemoration Days",NA,"Holidays and Observances","Social Advocacy",NA,NA,"Societal and Cultural Issues","National & Cultural Recognition","LGBTQ Rights/Transgender Awareness",6
+"374","TransgenderDayOfRemembrance",NA,"Social & Civil Rights",NA,"LGBTQ+ Rights/Celebration","Social Issues",NA,"Societal and Cultural Issues","National & Cultural Recognition","LGBTQ Rights/Transgender Awareness",6
+"375","TreeOfLife","Miscellaneous",NA,NA,"Historical/Religious Observance",NA,NA,"Specific Events and Recognitions",NA,"Likely Religious/Cultural Reference or Specific Event",4
+"376","trickortreat",NA,NA,NA,"Cultural","Miscellaneous",NA,"Specific Events and Recognitions",NA,"Cultural (Halloween)",4
+"377","Turkey",NA,NA,NA,"Geographical",NA,NA,NA,"International & Foreign Affairs","Geopolitical Reference",3
+"378","TwitterFiles","Miscellaneous","Miscellaneous & General","Entertainment, Sports, and Media","Social Media/Pop Culture","Miscellaneous",NA,NA,NA,"Likely Social Media/Technology Reference",6
+"379","TX",NA,NA,NA,"Geographical",NA,NA,NA,NA,NA,1
+"380","Ukraine",NA,NA,NA,"Foreign Affairs/Country","International Affairs",NA,"International Affairs and Global Issues","International & Foreign Affairs","International Relations/Geopolitical",5
+"381","UNDay",NA,NA,"Holidays and Observances","Observance","National Observances & Holidays",NA,NA,NA,"International Organizations/United Nations",4
+"382","Union",NA,NA,NA,"Workers’ Rights/Advocacy",NA,NA,NA,NA,NA,1
+"383","UnionStrong","Advocacy & Rights",NA,"Support, Appreciation, and Solidarity","Labor Rights/Advocacy","Political Campaign & Party Affiliations",NA,NA,NA,"Labor Unions/Workers' Rights",5
+"384","USA",NA,"Miscellaneous & General",NA,"Patriotic Expression/Country",NA,NA,NA,NA,"National Identity/Patriotism",3
+"385","USMC247","Military & Veterans",NA,NA,"Military",NA,NA,NA,NA,"U.S. Marine Corps/Military",3
+"386","USMNT","Sports",NA,"Other/General","Sports Support",NA,NA,NA,NA,"U.S. Men's National Soccer Team/Sports",4
+"387","USNavy","Military & Veterans",NA,NA,"Military",NA,NA,NA,NA,"U.S. Navy/Military",3
+"388","USSenateDebateFL",NA,NA,NA,"Political Event",NA,"Debates",NA,"Elections & Voting","U.S. Senate Debate/Florida Politics",4
+"389","VaxUpAmerica","Campaign & Political Movements",NA,"Support, Appreciation, and Solidarity","Health Advocacy","Health and Safety","Health Initiatives",NA,NA,"Health/Vaccination Campaign",6
+"390","VegasStrong",NA,NA,NA,"Community Solidarity/Event",NA,NA,NA,NA,"Community Support/Local Reference",2
+"391","Venezuela","International Issues","Miscellaneous & General",NA,"Foreign Affairs/Country","International Affairs",NA,"International Affairs and Global Issues","International & Foreign Affairs","International Relations/Geopolitical",7
+"392","VetBiz","Economic & Business",NA,"Support, Appreciation, and Solidarity","Veteran Affairs/Business",NA,NA,"Specific Events and Recognitions",NA,"Veterans/Business Support",5
+"393","Veterans","Military & Veterans",NA,"Other/General","Military Appreciation",NA,NA,"Specific Events and Recognitions",NA,"Veterans/Military",5
+"394","VeteransDay","Awareness & Commemoration Days","National Holidays & Commemorations","Holidays and Observances","National Observance","National Observances & Holidays","National Observances","Specific Events and Recognitions","National & Cultural Recognition","Veterans/Military/National Holiday",9
+"395","VOTE",NA,"Political Campaigns & Voting","Election and Voting","Political Advocacy",NA,NA,"Elections and Campaigns","Elections & Voting",NA,5
+"396","VoteBlue","Politics & Elections",NA,"Election and Voting","Political Advocacy","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Democratic Party/Campaign",7
+"397","VoteBlue","Politics & Elections",NA,"Election and Voting","Political Advocacy","Political Campaign & Party Affiliations",NA,"Elections and Campaigns","Elections & Voting","Democratic Party/Campaign",7
+"398","VoteBlueIn2022","Politics & Elections",NA,"Election and Voting","Political Campaign","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Democratic Party/2022 Campaign",7
+"399","VoteBlueToSaveDemocracy",NA,"Political Campaigns & Voting",NA,"Political Philosophy/Advocacy","Election and Voting",NA,"Party and Political Alignment",NA,"Democratic Party/Political Slogan",5
+"400","VoteBlueToSaveDemocracy",NA,"Political Campaigns & Voting",NA,"Political Philosophy/Advocacy","Election and Voting",NA,"Party and Political Alignment",NA,"Democratic Party/Political Slogan",5
+"401","VoteByMail","Politics & Elections","Political Campaigns & Voting","Election and Voting","Voting Method/Advocacy","Election and Voting","Election Methods","Elections and Campaigns","Elections & Voting","Voting/Alternative Voting Methods",9
+"402","VoteByMail","Politics & Elections","Political Campaigns & Voting","Election and Voting","Voting Method/Advocacy","Election and Voting","Election Methods","Elections and Campaigns","Elections & Voting","Voting/Alternative Voting Methods",9
+"403","VoteEarly",NA,"Political Campaigns & Voting","Election and Voting","Voting Advocacy","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Voting/Encouragement to Vote",7
+"404","VOTEGOP","Politics & Elections","Political Campaigns & Voting",NA,"Political Philosophy/Advocacy",NA,NA,NA,NA,NA,3
+"405","VoteOutMarkKelly","Politics & Elections",NA,NA,"Political Campaign",NA,NA,NA,NA,NA,2
+"406","VoteReady","Politics & Elections",NA,NA,"Voting Advocacy/Readiness","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Voting/Encouragement to Vote",6
+"407","VoteRepublican","Politics & Elections",NA,"Election and Voting","Political Philosophy/Advocacy","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Republican Party/Campaign",7
+"408","VoteThemOut","Politics & Elections",NA,"Election and Voting","Political Philosophy/Advocacy","Election and Voting",NA,"Elections and Campaigns","Elections & Voting","Political Slogan/Change in Leadership",7
+"409","WakandaForever",NA,NA,"Entertainment, Sports, and Media","Cultural Reference",NA,NA,"Miscellaneous and General",NA,"Cultural Reference/Entertainment",4
+"410","WarEagle",NA,NA,NA,"Sports/Cultural",NA,NA,NA,NA,"Sports/College Football",2
+"411","WASEN",NA,NA,NA,"Political Election",NA,NA,NA,NA,NA,1
+"412","WeAreMarshall",NA,NA,NA,"Sports/Cultural",NA,NA,NA,NA,"Cultural Reference/Sports",2
+"413","WeCanDoThis",NA,NA,NA,"General Positive Encouragement/Advocacy",NA,NA,NA,NA,"Motivational/Encouragement",2
+"414","whatahoot",NA,NA,NA,"Cultural or Specific Campaign/Event",NA,NA,NA,NA,NA,1
+"415","WISen",NA,NA,NA,"Political Election","States and Local Politics",NA,"State and Local Politics","States & Local Focus","Wisconsin Senate/Elections",5
+"416","Women",NA,"Social & Civil Rights",NA,"Gender Rights/Advocacy",NA,NA,NA,NA,NA,2
+"417","WomensRights",NA,"Social & Civil Rights","Support, Appreciation, and Solidarity","Gender Rights/Advocacy","Social Issues",NA,NA,NA,"Women's Rights/Equality",5
+"418","WorldAIDSDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Health Awareness","National Observances & Holidays","Health Awareness","Societal and Cultural Issues","National & Cultural Recognition","Health Awareness/AIDS",9
+"419","WorldCup","Miscellaneous",NA,"Entertainment, Sports, and Media","International Sports Event","Miscellaneous",NA,"International Affairs and Global Issues",NA,"Sports/International Soccer",6
+"420","WorldDiabetesDay",NA,NA,"Holidays and Observances","Health Awareness Day","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Health Awareness/Diabetes",6
+"421","WorldFoodDay",NA,NA,"Holidays and Observances","Global Celebration/Advocacy","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Food Awareness/Global Issues",6
+"422","WorldFreedomDay",NA,NA,"Holidays and Observances","Observance","National Observances & Holidays",NA,"Societal and Cultural Issues","National & Cultural Recognition","Human Rights/Freedom Celebration",6
+"423","WorldMentalHealthDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Health Awareness","National Observances & Holidays","Health Awareness","Societal and Cultural Issues","National & Cultural Recognition","Mental Health Awareness",9
+"424","WorldPolioDay",NA,NA,NA,"Health Advocacy","National Observances & Holidays",NA,"Specific Events and Recognitions","National & Cultural Recognition","Health Awareness/Polio",5
+"425","WorldSeries","Sports",NA,"Holidays and Observances","Sports","National Observances & Holidays","Sports","Specific Events and Recognitions",NA,"Sports/Baseball",7
+"426","WorldSpaceWeek","Environment & Space",NA,"Holidays and Observances","Science and Space Celebration","National Observances & Holidays",NA,"Environment and Climate",NA,"Space Exploration/Science",6
+"427","WorldSpaceWeek","Environment & Space",NA,"Holidays and Observances","Science and Space Celebration","National Observances & Holidays",NA,"Specific Events and Recognitions",NA,"Space Exploration/Science",6
+"428","WorldTeacherDay","Awareness & Commemoration Days","Awareness Campaigns & Months","Holidays and Observances","Occupation Appreciation",NA,NA,NA,NA,NA,4
+"429","WPS",NA,NA,NA,"Sports or Specific Campaign/Event",NA,NA,NA,NA,NA,1
+"430","WRDA",NA,NA,NA,"Legislation/Policy",NA,NA,"Policies and Legislation","Policies & Governance","Water Resources Development Act/Policy",4
+"431","YomKippur","Religion & Spirituality","National Holidays & Commemorations","Holidays and Observances","Religious Observance","National Observances & Holidays","Cultural Observances","Societal and Cultural Issues","National & Cultural Recognition","Religious Observance/Jewish Holiday",9

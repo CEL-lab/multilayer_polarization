@@ -12,10 +12,10 @@ library(RColorBrewer)
 library(muxViz)
 # Connect to the SQLite database
 conn <- dbConnect(SQLite(), "/Users/harunpirim/Documents/GitHub/multilayer_polarization/data/csvyerine.db")
-conn <- dbConnect(SQLite(), "../data/csvyerine.db")
+#conn <- dbConnect(SQLite(), "../data/csvyerine.db")
 #read final table
 finalTableWithAdditions <- read_csv("/Users/harunpirim/Documents/GitHub/multilayer_polarization/data/finalTable.csv", col_types = cols(.default = "c"))
-finalTableWithAdditions <- read_csv("../data/finalTable.csv", col_types = cols(.default = "c"))
+#finalTableWithAdditions <- read_csv("../data/finalTable.csv", col_types = cols(.default = "c"))
 
 # List the tables
 tables <- dbListTables(conn)
