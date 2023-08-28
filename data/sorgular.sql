@@ -411,6 +411,25 @@ ALTER TABLE senatorlist ADD finalParty TEXT;
 
 UPDATE senatorlist SET finalParty = COALESCE(party, "PARTY NAME, ENGLISH");
 
+--- region sadeleştirme
+
+ALTER TABLE senatorlist ADD finalRegion TEXT;
+
+select OFFICE2, "OFFICE1_CONSTITUENCYLEVEL2", state_abb, state, finalRegion from senatorlist;
+
+UPDATE senatorlist SET finalRegion = COALESCE(state, state_abb);
+
+--- sex sadeleştirme
+
+ALTER TABLE senatorlist ADD finalSex TEXT;
+
+select OFFICE2, FullName, gender2, GENDER, finalSex from senatorlist;
+
+--- aday mı değil mi sadeleştirme
+
+ALTER TABLE senatorlist ADD finalElection TEXT;
+
+select OFFICE2, kazanan, full_name, FullName, finalElection from senatorlist;
 
 
 
