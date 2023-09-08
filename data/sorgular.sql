@@ -431,5 +431,13 @@ ALTER TABLE senatorlist ADD finalElection TEXT;
 
 select OFFICE2, kazanan, full_name, FullName, finalElection from senatorlist;
 
+--- region diye bir column oluşturuyorum
+ALTER TABLE senatorlist ADD COLUMN region TEXT;
 
-
+--- Then, update the new 'region' column with 'south' if the 'state' column has one of the specified abbreviations
+UPDATE senatorlist SET region = (
+  CASE
+    WHEN state IN ('AL', 'AR', 'DE', 'FL', 'GA', 'KY', 'LA', 'MD', 'MS', 'NC', 'OK', 'SC', 'TN', 'TX', 'VA', 'WV') THEN 'south'
+    ELSE 'north'
+  END
+);
