@@ -427,9 +427,18 @@ select OFFICE2, FullName, gender2, GENDER, finalSex from senatorlist;
 
 --- aday mı değil mi sadeleştirme
 
-ALTER TABLE senatorlist ADD finalElection TEXT;
+ALTER TABLE senatorlist ADD finalCandidate TEXT;
 
-select OFFICE2, kazanan, full_name, FullName, finalElection from senatorlist;
+select OFFICE2, kazanan, full_name, FullName, finalElection, finalCandidate from senatorlist;
+
+UPDATE senatorlist
+SET finalCandidate = CASE
+    WHEN finalElection = 'w' THEN 'can'
+    WHEN finalElection = 'l' THEN 'can'
+    WHEN finalElection IS 'nan' THEN 'notcan'
+    ELSE finalCandidate -- keep the current value if none of the conditions match
+END;
+
 
 --- region diye bir column oluşturuyorum
 ALTER TABLE senatorlist ADD COLUMN region TEXT;
