@@ -67,5 +67,5 @@ dev.off()
 plot(multiplex_unsup, vertex.labels = democ_labels, vertex.labels.cex = 0.3, vertex.color = 'blue', vertex.size = 0.05)
 dev.off()
 #summary statistics for layers
-summary(multiplex_sup)
-summary(multiplex_unsup)
+summary(multiplex_sup_democ)
+summary(multiplex_unsup_democ)

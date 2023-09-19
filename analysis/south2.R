@@ -21,21 +21,16 @@ tables <- dbListTables(conn)
 sup_tables <- tables[tables %>% str_detect("^sup")]
 #List unsupervised tables
 unsup_tables <- tables[tables %>% str_detect("^unsup")]
-# Randomly select n males
-n <- nrow(subset(metadata,finalSex=='F'))
-set.seed(123)  # Setting a seed for reproducibility
-male_labels <- sample(which(metadata['finalSex'] == 'M'), n)
 #nodes that have democrat label
-#male_labels <- which(metadata['finalSex']=='M')
-
+south_labels <- which(metadata['region']=='south')
 #construct layers from tables from adjacency matrices
-construct_layers_male <- function(type = "sup") {
+construct_layers_south <- function(type = "sup") {
   layers <- list()  # Create an empty list to store data frames and matrices
   for (i in 1:length(get(paste0(type, "_tables")))) {
     df <- dbReadTable(conn, get(paste0(type, "_tables"))[i])
     df <- df[, -1]  # Remove the first column
     df <- df %>%
-      rename_with(~gsub("^X", "", .), starts_with("X")) %>% slice(male_labels) %>%  select(male_labels) %>% 
+      rename_with(~gsub("^X", "", .), starts_with("X")) %>% slice(which(metadata['region']=='south')) %>%  select(which(metadata['region']=='south')) %>% 
       as.matrix()
     # Assign the result to a list element
     layers[[paste0("layer", i)]] <- df
@@ -43,36 +38,36 @@ construct_layers_male <- function(type = "sup") {
   return(layers)
 }
 #construct supervised layers
-layers_sup_male <- construct_layers_male("sup")
+layers_sup_south <- construct_layers_south("sup")
 #layers_sup is a list of adjacency matrices
-ilayers_sup_male <- lapply(layers_sup_male, function(adj_matrix) {
+ilayers_sup_south <- lapply(layers_sup_south, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
 #construct unsupervised layers
-layers_unsup_male <- construct_layers_male("unsup")
-ilayers_unsup_male <- lapply(layers_unsup_male, function(adj_matrix) {
+layers_unsup_south <- construct_layers_south("unsup")
+ilayers_unsup_south <- lapply(layers_unsup_south, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
 #create empty multiplex for supervised
-multiplex_sup_male <- ml_empty()
+multiplex_sup_south <- ml_empty()
 #add igraph layers
-for(i in 1:length(ilayers_sup_male)){
-  if(length(E(ilayers_sup_male[[i]])!=0))
-    add_igraph_layer_ml(multiplex_sup_male,ilayers_sup_male[[i]],sup_tables[i])
+for(i in 1:length(ilayers_sup_south)){
+  if(length(E(ilayers_sup_south[[i]])!=0))
+    add_igraph_layer_ml(multiplex_sup_south,ilayers_sup_south[[i]],sup_tables[i])
 }
 
 #create empty multiplex for unsupervised
-multiplex_unsup_male <- ml_empty()
+multiplex_unsup_south <- ml_empty()
 #add igraph layers
-for(i in 1:length(ilayers_unsup_male)){
-  if(length(E(ilayers_unsup_male[[i]])!=0))
-    add_igraph_layer_ml(multiplex_unsup_male,ilayers_unsup_male[[i]],unsup_tables[i])
+for(i in 1:length(ilayers_unsup_south)){
+  if(length(E(ilayers_unsup_south[[i]])!=0))
+    add_igraph_layer_ml(multiplex_unsup_south,ilayers_unsup_south[[i]],unsup_tables[i])
 }
 #plot
-plot(multiplex_sup_male, vertex.labels = male_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
+plot(multiplex_sup_south, vertex.labels = south_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
 dev.off()
-plot(multiplex_unsup, vertex.labels = male_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
+plot(multiplex_unsup, vertex.labels = south_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
 dev.off()
 #summary statistics for layers
-summary(multiplex_sup_male)
-summary(multiplex_unsup_male)
+summary(multiplex_sup_south)
+summary(multiplex_unsup_south)
