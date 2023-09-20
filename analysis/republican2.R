@@ -69,5 +69,74 @@ dev.off()
 plot(multiplex_unsup, vertex.labels = repub_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
 dev.off()
 #summary statistics for layers
-summary(multiplex_sup)
-summary(multiplex_unsup)
+summary(multiplex_sup_repub)
+summary(multiplex_unsup_repub)
+
+jd_repub <- layer_comparison_ml(multiplex_sup_repub, method = 'jeffrey.degree')
+
+
+jd_repub %>% as.matrix() %>% upper.tri() -> subset_repub
+#as.matrix(df)[subset]
+
+# Duplicate the dataframe
+summary_similar <- jd_repub
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(jd_repub, is.numeric)
+summary_similar[, numeric_cols] <- lapply(jd_repub[, numeric_cols], function(col) {
+  col < summary(as.matrix(jd_repub)[subset_repub])[2]
+})
+
+# Display the updated dataframe
+print(summary_similar)
+
+# Duplicate the dataframe
+summary_dissimilar <- jd_repub
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(jd_repub, is.numeric)
+summary_dissimilar[, numeric_cols] <- lapply(jd_repub[, numeric_cols], function(col) {
+  col > summary(as.matrix(jd_repub)[subset_repub])[5]
+})
+
+# Display the updated dataframe
+print(summary_dissimilar)
+
+pd_repub <- layer_comparison_ml(multiplex_sup_repub, method = 'pearson.degree')
+
+
+pd_repub %>% as.matrix() %>% upper.tri() -> subset
+#as.matrix(df)[subset]
+
+# Duplicate the dataframe
+summary_dissimilar <- pd_repub
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(pd_repub, is.numeric)
+summary_dissimilar[, numeric_cols] <- lapply(pd_repub[, numeric_cols], function(col) {
+  col < summary(as.matrix(pd_repub)[subset_repub])[2]
+})
+
+# Display the updated dataframe
+print(summary_dissimilar)
+
+# Duplicate the dataframe
+summary_similar <- pd_repub
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(pd_repub, is.numeric)
+summary_similar[, numeric_cols] <- lapply(pd_repub[, numeric_cols], function(col) {
+  col > summary(as.matrix(pd_repub)[subset_repub])[5]
+})
+
+# Display the updated dataframe
+print(summary_similar)
+
+
+
+write.csv(summary(multiplex_sup_repub), 'multiplex_sup_repub.csv')
+write.csv(summary(multiplex_unsup_repub), 'multiplex_unsup_repub.csv')
+
+write.csv(pd_repub, 'pd_repub.csv')
+write.csv(jd_repub, 'jd_repub.csv')
+

@@ -1,5 +1,7 @@
 #multiplex analysis of democratic affiliation only
 #required libraries
+install.packages('gt')
+library(gt)
 library(DBI)
 library(RSQLite)
 library(igraph)
@@ -69,3 +71,73 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_democ)
 summary(multiplex_unsup_democ)
+
+
+
+jd_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'jeffrey.degree')
+
+
+jd_democ %>% as.matrix() %>% upper.tri() -> subset
+#as.matrix(df)[subset]
+
+# Duplicate the dataframe
+summary_similar <- jd_democ
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(jd_democ, is.numeric)
+summary_similar[, numeric_cols] <- lapply(jd_democ[, numeric_cols], function(col) {
+  col < summary(as.matrix(jd_democ)[subset_democ])[2]
+})
+
+# Display the updated dataframe
+print(summary_similar)
+
+# Duplicate the dataframe
+summary_dissimilar <- jd_democ
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(jd_democ, is.numeric)
+summary_dissimilar[, numeric_cols] <- lapply(jd_democ[, numeric_cols], function(col) {
+  col > summary(as.matrix(jd_democ)[subset_democ])[5]
+})
+
+# Display the updated dataframe
+print(summary_dissimilar)
+
+
+
+pd_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'pearson.degree')
+
+
+pd_democ %>% as.matrix() %>% upper.tri() -> subset
+#as.matrix(df)[subset]
+
+# Duplicate the dataframe
+summary_dissimilar <- pd_democ
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(pd_democ, is.numeric)
+summary_dissimilar[, numeric_cols] <- lapply(pd_democ[, numeric_cols], function(col) {
+  col < summary(as.matrix(pd_democ)[subset_democ])[2]
+})
+
+# Display the updated dataframe
+print(summary_dissimilar)
+
+# Duplicate the dataframe
+summary_similar <- pd_democ
+
+# Check for numeric columns and update values
+numeric_cols <- sapply(pd_democ, is.numeric)
+summary_similar[, numeric_cols] <- lapply(pd_democ[, numeric_cols], function(col) {
+  col > summary(as.matrix(pd_democ)[subset_democ])[5]
+})
+
+# Display the updated dataframe
+print(summary_similar)
+
+write.csv(summary(multiplex_sup_democ), 'multiplex_sup_democ.csv')
+write.csv(summary(multiplex_unsup_democ), 'multiplex_unsup_democ.csv')
+
+write.csv(pd_democ, 'pd_democ.csv')
+write.csv(jd_democ, 'jd_democ.csv')

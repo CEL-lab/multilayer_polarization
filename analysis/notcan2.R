@@ -71,3 +71,6 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_notcan)
 summary(multiplex_unsup_notcan)
+
+write.csv(summary(multiplex_sup_notcan), 'multiplex_sup_notcan.csv')
+write.csv(summary(multiplex_unsup_notcan), 'multiplex_unsup_notcan.csv')
