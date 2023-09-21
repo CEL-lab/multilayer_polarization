@@ -54,6 +54,10 @@ for(i in 1:length(ilayers_sup)){
   add_igraph_layer_ml(multiplex_sup,ilayers_sup[[i]],sup_tables[i])
 }
 
+#calculate assortativity of graphs
+assortativity_sup <- lapply(ilayers_sup, assortativity.degree)
+head(sort(degree_ml(multiplex_sup),decreasing = T))
+
 #create empty multiplex for unsupervised
 multiplex_unsup <- ml_empty()
 #add igraph layers

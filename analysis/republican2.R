@@ -56,6 +56,8 @@ for(i in 1:length(ilayers_sup_repub)){
   add_igraph_layer_ml(multiplex_sup_repub,ilayers_sup_repub[[i]],sup_tables[i])
 }
 
+assortativity_sup_repub <- lapply(ilayers_sup_repub, assortativity.degree)
+
 #create empty multiplex for unsupervised
 multiplex_unsup_repub <- ml_empty()
 #add igraph layers
@@ -103,7 +105,7 @@ summary_dissimilar[, numeric_cols] <- lapply(jd_repub[, numeric_cols], function(
 print(summary_dissimilar)
 
 pd_repub <- layer_comparison_ml(multiplex_sup_repub, method = 'pearson.degree')
-
+je_repub <- layer_comparison_ml(multiplex_sup_repub, method = 'jaccard.edges')
 
 pd_repub %>% as.matrix() %>% upper.tri() -> subset
 #as.matrix(df)[subset]

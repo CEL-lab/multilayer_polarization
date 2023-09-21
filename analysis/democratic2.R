@@ -50,6 +50,11 @@ layers_unsup_democ <- construct_layers_democ("unsup")
 ilayers_unsup_democ <- lapply(layers_unsup_democ, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_democ <- lapply(ilayers_sup_democ, assortativity.degree)
+
+
 #create empty multiplex for supervised
 multiplex_sup_democ <- ml_empty()
 #add igraph layers
@@ -107,6 +112,7 @@ print(summary_dissimilar)
 
 
 pd_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'pearson.degree')
+je_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'jaccard.edges')
 
 
 pd_democ %>% as.matrix() %>% upper.tri() -> subset
