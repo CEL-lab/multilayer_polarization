@@ -99,3 +99,6 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup)
 summary(multiplex_unsup)
+
+write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
+write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
