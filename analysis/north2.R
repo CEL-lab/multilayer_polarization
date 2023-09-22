@@ -55,10 +55,10 @@ ilayers_unsup_north <- lapply(layers_unsup_north, function(adj_matrix) {
 })
 
 #calculate assortativity of graphs
-assortativity_sup_repub <- lapply(ilayers_sup_repub, assortativity.degree)
-names(assortativity_sup_repub) <- sup_tables
-dfa3 <- as.data.frame(assortativity_sup_repub)
-dfa3$model = "Republican"
+assortativity_sup_north <- lapply(ilayers_sup_north, assortativity.degree)
+names(assortativity_sup_north) <- sup_tables
+dfa9 <- as.data.frame(assortativity_sup_north)
+dfa9$model = "Republican"
 
 
 #create empty multiplex for supervised
