@@ -113,3 +113,5 @@ get_community_list_ml(glouvain_ml(multiplex_sup),multiplex_sup)
 
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
+
+write_ml(multiplex_sup, 'multiplex_sup', format = 'graphml')
