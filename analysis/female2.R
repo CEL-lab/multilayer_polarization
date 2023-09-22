@@ -48,6 +48,14 @@ layers_unsup_fem <- construct_layers_fem("unsup")
 ilayers_unsup_fem <- lapply(layers_unsup_fem, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_fem <- lapply(ilayers_sup_fem, assortativity.degree)
+names(assortativity_sup_fem) <- sup_tables
+dfa7 <- as.data.frame(assortativity_sup_fem)
+dfa7$model = "Female"
+
+
 #create empty multiplex for supervised
 multiplex_sup_fem <- ml_empty()
 #add igraph layers
@@ -71,6 +79,12 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_fem)
 summary(multiplex_unsup_fem)
+
+#layer comparison
+pd_fem <- layer_comparison_ml(multiplex_sup_fem, method = 'pearson.degree')
+jd_fem <- layer_comparison_ml(multiplex_sup_fem, method = 'jeffrey.degree')
+write.csv(pd_fem, 'pd_fem.csv')
+write.csv(jd_fem, 'jd_fem.csv')
 
 write.csv(summary(multiplex_sup_fem), 'multiplex_sup_fem.csv')
 write.csv(summary(multiplex_unsup_fem), 'multiplex_unsup_fem.csv')

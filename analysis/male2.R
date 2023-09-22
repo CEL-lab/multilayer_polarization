@@ -48,11 +48,20 @@ layers_sup_male <- construct_layers_male("sup")
 ilayers_sup_male <- lapply(layers_sup_male, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
 #construct unsupervised layers
 layers_unsup_male <- construct_layers_male("unsup")
 ilayers_unsup_male <- lapply(layers_unsup_male, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_male <- lapply(ilayers_sup_male, assortativity.degree)
+names(assortativity_sup_male) <- sup_tables
+dfa6 <- as.data.frame(assortativity_sup_male)
+dfa6$model = "Male"
+
+
 #create empty multiplex for supervised
 multiplex_sup_male <- ml_empty()
 #add igraph layers
@@ -76,6 +85,12 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_male)
 summary(multiplex_unsup_male)
+
+#layer comparison
+pd_male <- layer_comparison_ml(multiplex_sup_male, method = 'pearson.degree')
+jd_male <- layer_comparison_ml(multiplex_sup_male, method = 'jeffrey.degree')
+write.csv(pd_male, 'pd_male.csv')
+write.csv(jd_male, 'jd_male.csv')
 
 
 write.csv(summary(multiplex_sup_male), 'multiplex_sup_male.csv')

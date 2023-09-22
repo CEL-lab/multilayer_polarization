@@ -53,6 +53,14 @@ layers_unsup_north <- construct_layers_north("unsup")
 ilayers_unsup_north <- lapply(layers_unsup_north, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_repub <- lapply(ilayers_sup_repub, assortativity.degree)
+names(assortativity_sup_repub) <- sup_tables
+dfa3 <- as.data.frame(assortativity_sup_repub)
+dfa3$model = "Republican"
+
+
 #create empty multiplex for supervised
 multiplex_sup_north <- ml_empty()
 #add igraph layers
@@ -76,6 +84,12 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_north)
 summary(multiplex_unsup_north)
+
+#layer comparison
+pd_north <- layer_comparison_ml(multiplex_sup_north, method = 'pearson.degree')
+jd_north <- layer_comparison_ml(multiplex_sup_north, method = 'jeffrey.degree')
+write.csv(pd_north, 'pd_north.csv')
+write.csv(jd_north, 'jd_north.csv')
 
 write.csv(summary(multiplex_sup_north), 'multiplex_sup_north.csv')
 write.csv(summary(multiplex_unsup_north), 'multiplex_unsup_north.csv')

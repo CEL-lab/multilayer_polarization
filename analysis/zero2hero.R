@@ -56,7 +56,9 @@ for(i in 1:length(ilayers_sup)){
 
 #calculate assortativity of graphs
 assortativity_sup <- lapply(ilayers_sup, assortativity.degree)
-head(sort(degree_ml(multiplex_sup),decreasing = T))
+names(assortativity_sup) <- sup_tables
+dfa1 <- as.data.frame(assortativity_sup)
+dfa1$model = "Full"
 
 #create empty multiplex for unsupervised
 multiplex_unsup <- ml_empty()
@@ -101,8 +103,13 @@ dev.off()
 plot(multiplex_unsup, vertex.labels = labels, vertex.labels.cex = 0.3, vertex.color = colornew, vertex.size = 0.05)
 dev.off()
 #summary statistics for layers
+
 summary(multiplex_sup)
 summary(multiplex_unsup)
+
+#community structure
+get_community_list_ml(glouvain_ml(multiplex_sup),multiplex_sup)
+
 
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')

@@ -56,7 +56,11 @@ for(i in 1:length(ilayers_sup_repub)){
   add_igraph_layer_ml(multiplex_sup_repub,ilayers_sup_repub[[i]],sup_tables[i])
 }
 
+#calculate assortativity of graphs
 assortativity_sup_repub <- lapply(ilayers_sup_repub, assortativity.degree)
+names(assortativity_sup_repub) <- sup_tables
+dfa3 <- as.data.frame(assortativity_sup_repub)
+dfa3$model = "Republican"
 
 #create empty multiplex for unsupervised
 multiplex_unsup_repub <- ml_empty()

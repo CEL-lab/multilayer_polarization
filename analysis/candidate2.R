@@ -48,6 +48,14 @@ layers_unsup_can <- construct_layers_can("unsup")
 ilayers_unsup_can <- lapply(layers_unsup_can, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_can <- lapply(ilayers_sup_can, assortativity.degree)
+names(assortativity_sup_can) <- sup_tables
+dfa4 <- as.data.frame(assortativity_sup_can)
+dfa4$model = "Candidate"
+
+
 #create empty multiplex for supervised
 multiplex_sup_can <- ml_empty()
 #add igraph layers
@@ -68,9 +76,20 @@ plot(multiplex_sup_can, vertex.labels = can_labels, vertex.labels.cex = 0.3, ver
 dev.off()
 plot(multiplex_unsup, vertex.labels = can_labels, vertex.labels.cex = 0.3, vertex.color = 'red', vertex.size = 0.05)
 dev.off()
+
+#layer comparison
+pd_can <- layer_comparison_ml(multiplex_sup_can, method = 'pearson.degree')
+jd_can <- layer_comparison_ml(multiplex_sup_can, method = 'jeffrey.degree')
+write.csv(pd_can, 'pd_can.csv')
+write.csv(jd_can, 'jd_can.csv')
+
 #summary statistics for layers
 summary(multiplex_sup_can)
 summary(multiplex_unsup_can)
 
 write.csv(summary(multiplex_sup_can), 'multiplex_sup_can.csv')
 write.csv(summary(multiplex_unsup_can), 'multiplex_unsup_can.csv')
+
+
+
+

@@ -53,7 +53,9 @@ ilayers_unsup_democ <- lapply(layers_unsup_democ, function(adj_matrix) {
 
 #calculate assortativity of graphs
 assortativity_sup_democ <- lapply(ilayers_sup_democ, assortativity.degree)
-
+names(assortativity_sup_democ) <- sup_tables
+dfa2 <- as.data.frame(assortativity_sup_democ)
+dfa2$model = "Democrat"
 
 #create empty multiplex for supervised
 multiplex_sup_democ <- ml_empty()
@@ -112,7 +114,9 @@ print(summary_dissimilar)
 
 
 pd_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'pearson.degree')
-je_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'jaccard.edges')
+jd_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'jeffrey.degree')
+
+#je_democ <- layer_comparison_ml(multiplex_sup_democ, method = 'jaccard.edges')
 
 
 pd_democ %>% as.matrix() %>% upper.tri() -> subset

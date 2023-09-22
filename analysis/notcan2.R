@@ -48,6 +48,14 @@ layers_unsup_notcan <- construct_layers_notcan("unsup")
 ilayers_unsup_notcan <- lapply(layers_unsup_notcan, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_notcan <- lapply(ilayers_sup_notcan, assortativity.degree)
+names(assortativity_sup_notcan) <- sup_tables
+dfa5 <- as.data.frame(assortativity_sup_notcan)
+dfa5$model = "Incumbent"
+
+
 #create empty multiplex for supervised
 multiplex_sup_notcan <- ml_empty()
 #add igraph layers
@@ -71,6 +79,13 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_notcan)
 summary(multiplex_unsup_notcan)
+
+#layer comparison
+pd_notcan <- layer_comparison_ml(multiplex_sup_notcan, method = 'pearson.degree')
+jd_notcan <- layer_comparison_ml(multiplex_sup_notcan, method = 'jeffrey.degree')
+write.csv(pd_notcan, 'pd_notcan.csv')
+write.csv(jd_notcan, 'jd_notcan.csv')
+
 
 write.csv(summary(multiplex_sup_notcan), 'multiplex_sup_notcan.csv')
 write.csv(summary(multiplex_unsup_notcan), 'multiplex_unsup_notcan.csv')

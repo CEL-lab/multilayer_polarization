@@ -48,6 +48,14 @@ layers_unsup_south <- construct_layers_south("unsup")
 ilayers_unsup_south <- lapply(layers_unsup_south, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
+
+#calculate assortativity of graphs
+assortativity_sup_south <- lapply(ilayers_sup_south, assortativity.degree)
+names(assortativity_sup_south) <- sup_tables
+dfa8 <- as.data.frame(assortativity_sup_south)
+dfa8$model = "South"
+
+
 #create empty multiplex for supervised
 multiplex_sup_south <- ml_empty()
 #add igraph layers
@@ -71,6 +79,12 @@ dev.off()
 #summary statistics for layers
 summary(multiplex_sup_south)
 summary(multiplex_unsup_south)
+
+#layer comparison
+pd_south <- layer_comparison_ml(multiplex_sup_south, method = 'pearson.degree')
+jd_south <- layer_comparison_ml(multiplex_sup_south, method = 'jeffrey.degree')
+write.csv(pd_south, 'pd_south.csv')
+write.csv(jd_south, 'jd_south.csv')
 
 write.csv(summary(multiplex_sup_south), 'multiplex_sup_south.csv')
 write.csv(summary(multiplex_unsup_south), 'multiplex_unsup_south.csv')
