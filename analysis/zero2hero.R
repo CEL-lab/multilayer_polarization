@@ -108,10 +108,97 @@ summary(multiplex_sup)
 summary(multiplex_unsup)
 
 #community structure
-get_community_list_ml(glouvain_ml(multiplex_sup),multiplex_sup)
+clus <- glouvain_ml(multiplex_sup, omega = 1) 
 
+# Group by 'cid' and summarize the cluster sizes, ignoring layer repetitions
+cluster_summary <- clus %>%
+  distinct(actor, cid, .keep_all = TRUE) %>%
+  group_by(cid) %>%
+  summarize(cluster_size = n())
 
+# Filter clusters with size 10 or more
+clusters_with_10_or_more <- cluster_summary %>%
+  filter(cluster_size >= 10)
+
+# Print the clusters with size 10 or more
+print(clusters_with_10_or_more)
+
+# Create an empty list to store actors in each cluster
+actor_lists <- list()
+
+# Iterate through clusters and store actors in the list
+for (i in 1:nrow(clusters_with_10_or_more)) {
+  cid_value <- clusters_with_10_or_more$cid[i]
+  actors_in_cluster <- clus %>%
+    filter(cid == cid_value) %>%
+    pull(actor) %>%
+    unique()
+  
+  actor_lists[[as.character(cid_value)]] <- actors_in_cluster
+}
+
+#pull cluster labels 
+labels[as.numeric(actor_lists[[1]])]
+
+# get_community_list_ml(clus,multiplex_sup)
+# plot(multiplex_sup, com = clus)
+
+write_ml(multiplex_sup, 'multiplex_sup', format = 'graphml')
+
+#actor analysis 
+
+deg <- degree_ml(multiplex_sup)
+top_degrees <- head(deg[order(-deg)])
+top_actors <- head(unlist(actors_ml(multiplex_sup))[order(-deg)])
+top_actors
+
+# Initialize an empty list
+list_02H <- list()
+
+# Loop through the column names and add elements with values from f_x
+for (col_name in sup_tables) {
+  list_02H[[col_name]] <- degree_ml(multiplex_sup, actors = top_actors, layers = col_name)
+}
+list_02H[['flat']] <- top_degrees
+
+# Convert the list to a DataFrame
+df_02H <- as.data.frame(list_02H)
+row.names(df_02H) <- top_actors
+
+#degree deviation among layers 
+sort(degree_deviation_ml(multiplex_sup, actors = top_actors))
+
+#neighborhood and exclusive neighborhood
+#exclusively present in these two layers, thus removing those layers 
+#will substantially impact the actor’s connectivity
+neighborhood_ml(multiplex_sup, actors = top_actors, layers = sup_tables[1:2])
+xneighborhood_ml(multiplex_sup, actors = top_actors, layers = sup_tables[1:2])
+
+#compute relevance and xrelevance that is nighborhood in specific layers / overall neighborhood
+#Initialize an empty list
+r_list_02H <- list()
+xr_list_02H <- list()
+
+# Loop through the column names and add elements with values from f_x
+for (col_name in sup_tables) {
+  r_list_02H[[col_name]] <- relevance_ml(multiplex_sup, actors = top_actors, layers = col_name)
+}
+
+for (col_name in sup_tables) {
+  xr_list_02H[[col_name]] <- xrelevance_ml(multiplex_sup, actors = top_actors, layers = col_name)
+}
+
+# Convert the list to a DataFrame
+r_list_02H <- as.data.frame(r_list_02H)
+row.names(r_list_02H) <- top_actors
+xr_list_02H <- as.data.frame(xr_list_02H)
+row.names(xr_list_02H ) <- top_actors
+
+#distance between actors
+distance_ml(multiplex_sup, top_actors[1], top_actors[2])
+
+#write tables into csv
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
 
-write_ml(multiplex_sup, 'multiplex_sup', format = 'graphml')
+
