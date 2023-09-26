@@ -450,3 +450,9 @@ UPDATE senatorlist SET region = (
     ELSE 'north'
   END
 );
+
+
+--- direk dosya üzerinden değişiklik yaptım bu sefer öncesi için burayı referans almak lazım
+ALTER TABLE metadata ADD finalName TEXT;
+
+select FullName, full_name, finalName from metadata
