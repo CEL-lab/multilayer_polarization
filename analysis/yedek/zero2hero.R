@@ -146,7 +146,7 @@ labels[as.numeric(actor_lists[[1]])]
 # get_community_list_ml(clus,multiplex_sup)
 # plot(multiplex_sup, com = clus)
 
-write_ml(multiplex_sup, 'multiplex_sup', format = 'graphml')
+write_ml(multiplex_sup, 'multiplex_sup.graphml', format = 'graphml')
 
 #actor analysis 
 
