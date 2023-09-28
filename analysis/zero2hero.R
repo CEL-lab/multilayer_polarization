@@ -48,16 +48,6 @@ ilayers_sup <- lapply(layers_sup, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
 
-##################
-metadata |>
-  select(OFFICE2, finalParty, finalRegion, finalSex, region, finalCandidate) |>
-  head()
-
-tables
-
-dbReadTable(conn, "sup_econ") |> head()
-
-######################
 # construct unsupervised layers
 layers_unsup <- construct_layers("unsup")
 ilayers_unsup <- lapply(layers_unsup, function(adj_matrix) {
@@ -156,13 +146,11 @@ for (i in 1:nrow(clusters_with_10_or_more)) {
   actor_lists[[as.character(cid_value)]] <- actors_in_cluster
 }
 
-#<<<<<<< HEAD
 #pull cluster labels 
 table(labels[as.numeric(actor_lists[[4]])])
-#=======
+
 # pull cluster labels
 labels[as.numeric(actor_lists[[1]])]
-#>>>>>>> 5e3cfc25686ec6d10664ad75d808a37765916b43
 
 # get_community_list_ml(clus,multiplex_sup)
 # plot(multiplex_sup, com = clus)
@@ -221,7 +209,6 @@ row.names(xr_list_02H) <- top_actors
 # distance between actors
 distance_ml(multiplex_sup, top_actors[1], top_actors[2])
 
-#<<<<<<< HEAD
 #write tables into csv
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
@@ -276,4 +263,3 @@ multiplot(ilayers_sup)
 # write tables into csv
 write.csv(summary(multiplex_sup), "multiplex_sup.csv")
 write.csv(summary(multiplex_unsup), "multiplex_unsup.csv")
-#>>>>>>> 5e3cfc25686ec6d10664ad75d808a37765916b43
