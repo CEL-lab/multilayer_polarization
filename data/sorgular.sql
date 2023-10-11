@@ -386,6 +386,8 @@ FROM tweet_hashtags
 GROUP BY cluster
 HAVING unique_users > 1;
 
+select count(distinct cluster) from hashtag_summary;
+
 --- create id-hashtag table 2
 CREATE TABLE tweet_hashtags2 (
     OFFICE2 TEXT,
@@ -456,3 +458,115 @@ UPDATE senatorlist SET region = (
 ALTER TABLE metadata ADD finalName TEXT;
 
 select FullName, full_name, finalName from metadata
+
+-------------------------------------------
+--- descriptive statistics for the paper---
+-------------------------------------------
+
+CREATE TABLE tumTweets3 AS
+SELECT tumTweets2.*, senatorlist.finalCandidate, senatorlist.finalParty, senatorlist.finalElection, senatorlist.region, senatorlist.finalSex
+FROM tumTweets2
+JOIN senatorlist ON tumTweets2.OFFICE2 = senatorlist.OFFICE2;
+
+SELECT COUNT(DISTINCT OFFICE2) FROM tumTweets3; ---128
+
+SELECT finalParty, COUNT(DISTINCT OFFICE2) FROM tumTweets3 group by finalParty;
+SELECT finalParty, COUNT(DISTINCT id) FROM tumTweets3 group by finalParty;
+
+SELECT region, COUNT(DISTINCT OFFICE2) FROM tumTweets3 group by region;
+SELECT region, COUNT(DISTINCT id) FROM tumTweets3 group by region;
+
+SELECT finalCandidate, COUNT(DISTINCT OFFICE2) FROM tumTweets3 group by finalCandidate;
+SELECT finalCandidate, COUNT(DISTINCT id) FROM tumTweets3 group by finalCandidate;
+
+SELECT finalSex, COUNT(DISTINCT OFFICE2) FROM tumTweets3 group by finalSex;
+SELECT finalSex, COUNT(DISTINCT id) FROM tumTweets3 group by finalSex;
+
+CREATE TABLE tweet_hashtags3 AS
+SELECT tweet_hashtags2.*, senatorlist.finalCandidate, senatorlist.finalParty, senatorlist.finalElection, senatorlist.region, senatorlist.finalSex
+FROM tweet_hashtags2
+JOIN senatorlist ON tweet_hashtags2.OFFICE2 = senatorlist.OFFICE2;
+
+SELECT COUNT(DISTINCT hashtag) FROM tweet_hashtags3
+
+SELECT COUNT(DISTINCT hashtag) AS "# of Hashtags", COUNT(DISTINCT cluster) AS "# of Clusters" FROM tweet_hashtags3;
+
+SELECT
+  finalParty,
+  COUNT(DISTINCT hashtag) AS "# of Hashtags",
+  COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags3
+GROUP BY finalParty;
+
+SELECT
+  region,
+  COUNT(DISTINCT hashtag) AS "# of Hashtags",
+  COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags3
+GROUP BY region;
+
+
+SELECT
+  finalSex,
+  COUNT(DISTINCT hashtag) AS "# of Hashtags",
+  COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags3
+GROUP BY finalSex;
+
+SELECT
+  finalCandidate,
+  COUNT(DISTINCT hashtag) AS "# of Hashtags",
+  COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags3
+GROUP BY finalCandidate;
+
+SELECT
+    sup_category,
+    COUNT(DISTINCT hashtag) AS "# of Hashtags",
+    COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags4
+GROUP BY sup_category;
+
+SELECT
+    unsup_category,
+    COUNT(DISTINCT hashtag) AS "# of Hashtags",
+    COUNT(DISTINCT cluster) AS "# of Clusters"
+FROM tweet_hashtags4
+GROUP BY unsup_category;
+
+select distinct sup_category from tweet_hashtags4;
+
+SELECT
+    SUM(sub.count) as total_count
+FROM
+    (
+        SELECT
+            eh.hashtag,
+            COUNT(*) as count
+        FROM
+            (SELECT DISTINCT hashtag FROM tweet_hashtags4 WHERE unsup_category = 'Campaign') as eh
+        JOIN
+            tumTweets3 tt ON instr(tt.entities, eh.hashtag) > 0
+        GROUP BY
+            eh.hashtag
+    ) as sub;
+
+
+select count(distinct OFFICE2) from tweet_hashtags4 where unsup_category = "State Politcs";
+
+---
+Economy
+SJ Identity
+Immigration
+SJ Labor
+Health
+SJ Women
+Environment
+
+Awareness & Appreciation
+Media
+Governance
+Rights & Social Issues
+Campaign
+State Politcs
+---
