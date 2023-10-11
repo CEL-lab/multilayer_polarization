@@ -13,7 +13,7 @@ library(RColorBrewer)
 library(muxViz) # multiplex visualization
 
 # Connect to the SQLite database
-conn <- dbConnect(SQLite(), "./data/csvyerine2.db")
+conn <- dbConnect(SQLite(), "/Users/harunpirim/Documents/GitHub/multilayer_polarization/data/csvyerine2.db")
 
 # read meta table
 metadata <- dbReadTable(conn, "metadata")
@@ -48,16 +48,14 @@ ilayers_sup <- lapply(layers_sup, function(adj_matrix) {
   graph_from_adjacency_matrix(adj_matrix, mode = "undirected")
 })
 
-##################
-metadata |>
-  select(OFFICE2, finalParty, finalRegion, finalSex, region, finalCandidate) |>
-  head()
+#add metadata to nodes
 
-tables
+for(i in 1:length(ilayers_sup)){
+  V(ilayers_sup[[i]])$region = metadata$region
+  V(ilayers_sup[[i]])$party = metadata$finalParty
+  V(ilayers_sup[[i]])$sex = metadata$finalSex
+}
 
-dbReadTable(conn, "sup_econ") |> head()
-
-######################
 # construct unsupervised layers
 layers_unsup <- construct_layers("unsup")
 ilayers_unsup <- lapply(layers_unsup, function(adj_matrix) {
@@ -156,13 +154,11 @@ for (i in 1:nrow(clusters_with_10_or_more)) {
   actor_lists[[as.character(cid_value)]] <- actors_in_cluster
 }
 
-#<<<<<<< HEAD
 #pull cluster labels 
 table(labels[as.numeric(actor_lists[[4]])])
-#=======
+
 # pull cluster labels
 labels[as.numeric(actor_lists[[1]])]
-#>>>>>>> 5e3cfc25686ec6d10664ad75d808a37765916b43
 
 # get_community_list_ml(clus,multiplex_sup)
 # plot(multiplex_sup, com = clus)
@@ -221,7 +217,6 @@ row.names(xr_list_02H) <- top_actors
 # distance between actors
 distance_ml(multiplex_sup, top_actors[1], top_actors[2])
 
-#<<<<<<< HEAD
 #write tables into csv
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
@@ -242,38 +237,38 @@ plot_multiplex(
   show.legend = F
 )
 
-plot_multiplex3D(
-  ilayers_sup,
-  my_pal,
-  as.undirected = T,
-  layer.layout = "auto",
-  layer.labels = "auto",
-  layer.labels.cex = 2,
-  edge.colors = "auto",
-  edge.normalize = F,
-  edge.size.scale = 1,
-  node.colors = "auto",
-  node.size.values = 0.5,
-  node.size.scale = 1,
-  node.alpha = 0.5,
-  edge.alpha = 1,
-  layer.alpha = "auto",
-  layout = "fr",
-  show.nodeLabels = F,
-  show.aggregate = F,
-  aggr.alpha = "auto",
-  aggr.color = "#dadada",
-  node.colors.aggr = "#dadada",
-  layer.scale = 2,
-  layer.shift.x = 0,
-  layer.shift.y = 0,
-  layer.space = 1.5,
-  FOV = 30
-)
+# plot_multiplex3D(
+#   ilayers_sup,
+#   my_pal,
+#   as.undirected = T,
+#   layer.layout = "auto",
+#   layer.labels = "auto",
+#   layer.labels.cex = 2,
+#   edge.colors = "auto",
+#   edge.normalize = F,
+#   edge.size.scale = 1,
+#   node.colors = "auto",
+#   node.size.values = 0.5,
+#   node.size.scale = 1,
+#   node.alpha = 0.5,
+#   edge.alpha = 1,
+#   layer.alpha = "auto",
+#   layout = "fr",
+#   show.nodeLabels = F,
+#   show.aggregate = F,
+#   aggr.alpha = "auto",
+#   aggr.color = "#dadada",
+#   node.colors.aggr = "#dadada",
+#   layer.scale = 2,
+#   layer.shift.x = 0,
+#   layer.shift.y = 0,
+#   layer.space = 1.5,
+#   FOV = 30
+# )
 
-multiplot(ilayers_sup)
-#=======
+#multiplot(ilayers_sup)
+
+
 # write tables into csv
 write.csv(summary(multiplex_sup), "multiplex_sup.csv")
 write.csv(summary(multiplex_unsup), "multiplex_unsup.csv")
-#>>>>>>> 5e3cfc25686ec6d10664ad75d808a37765916b43
