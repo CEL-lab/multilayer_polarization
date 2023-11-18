@@ -570,3 +570,7 @@ Rights & Social Issues
 Campaign
 State Politcs
 ---
+
+select count(distinct hashtag) from tweet_hashtags4
+
+select sum(frequency) from all_hashtags
