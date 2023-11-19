@@ -13,7 +13,7 @@ library(RColorBrewer)
 library(muxViz) # multiplex visualization
 
 # Connect to the SQLite database
-conn <- dbConnect(SQLite(), "/Users/harunpirim/Documents/GitHub/multilayer_polarization/data/csvyerine2.db")
+conn <- dbConnect(SQLite(), "/GitHub/multilayer_polarization/data/csvyerine2.db")
 
 # read meta table
 metadata <- dbReadTable(conn, "metadata")
@@ -221,54 +221,3 @@ distance_ml(multiplex_sup, top_actors[1], top_actors[2])
 write.csv(summary(multiplex_sup), 'multiplex_sup.csv')
 write.csv(summary(multiplex_unsup), 'multiplex_unsup.csv')
 
-#muxviz visualization
-
-aMatrix <- GetAggregateMatrixFromNetworkList(ilayers_sup)
-my_pal <- RColorBrewer::brewer.pal(7, "Set1")
-plot_multiplex(
-  ilayers_sup,
-  my_pal,
-  edge.colors = "black",
-  node.colors = "auto",
-  node.size.values = 0.0005,
-  node.alpha = 0.1,
-  edge.alpha = 0.5,
-  layout = "fr",
-  show.legend = F
-)
-
-# plot_multiplex3D(
-#   ilayers_sup,
-#   my_pal,
-#   as.undirected = T,
-#   layer.layout = "auto",
-#   layer.labels = "auto",
-#   layer.labels.cex = 2,
-#   edge.colors = "auto",
-#   edge.normalize = F,
-#   edge.size.scale = 1,
-#   node.colors = "auto",
-#   node.size.values = 0.5,
-#   node.size.scale = 1,
-#   node.alpha = 0.5,
-#   edge.alpha = 1,
-#   layer.alpha = "auto",
-#   layout = "fr",
-#   show.nodeLabels = F,
-#   show.aggregate = F,
-#   aggr.alpha = "auto",
-#   aggr.color = "#dadada",
-#   node.colors.aggr = "#dadada",
-#   layer.scale = 2,
-#   layer.shift.x = 0,
-#   layer.shift.y = 0,
-#   layer.space = 1.5,
-#   FOV = 30
-# )
-
-#multiplot(ilayers_sup)
-
-
-# write tables into csv
-write.csv(summary(multiplex_sup), "multiplex_sup.csv")
-write.csv(summary(multiplex_unsup), "multiplex_unsup.csv")
