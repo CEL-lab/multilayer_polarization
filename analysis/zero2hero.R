@@ -138,8 +138,8 @@ clusters_with_10_or_more <- cluster_summary %>%
 print(clusters_with_10_or_more)
 
 clus10 <- clus %>% filter(cid %in% clusters_with_10_or_more$cid)
-plot(multiplex_sup, com = clus10, vertex.labels.cex = .5, vertex.labels = labels, com.cex = 0.0001, layout = )
-
+plot(multiplex_sup,  vertex.labels.cex = .5, vertex.labels = labels, com.cex = 0.0001, layout = )
+#com = clus10,above
 # Create an empty list to store actors in each cluster
 actor_lists <- list()
 
